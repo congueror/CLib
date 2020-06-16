@@ -1,6 +1,6 @@
 package com.congueror.clib;
 
-import com.congueror.clib.init.BlockInit;
+import com.congueror.clib.init.BlockInitNew;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,6 +16,6 @@ public class ClibItemGroup extends ItemGroup
 	@Override
 	public ItemStack createIcon() 
 	{
-		return new ItemStack(BlockInit.tin_ore);
+		return new ItemStack(BlockInitNew.TIN_ORE.get());
 	}
 }

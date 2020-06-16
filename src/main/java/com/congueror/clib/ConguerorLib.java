@@ -1,17 +1,24 @@
 package com.congueror.clib;
 
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.congueror.clib.init.BlockInitNew;
 import com.congueror.clib.world.gen.ModOreGen;
 
 @Mod("clib")
@@ -26,15 +33,39 @@ public class ConguerorLib
     {
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	modEventBus.addListener(this::setup);
+    	modEventBus.addListener(this::clientRegistries);
     	modEventBus.addListener(this::doClientStuff);
         instance=this;
+        
+        BlockInitNew.BLOCKS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
+    
+    @SubscribeEvent
+    public static void onRegisterItems(final RegistryEvent.Register<Item> event) 
+    {
+        final IForgeRegistry<Item> registry = event.getRegistry();
+        
+        BlockInitNew.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> 
+        {
+            final Item.Properties properties = new Item.Properties().group(ClibItemGroup.instance);
+            final BlockItem blockItem = new BlockItem(block, properties);
+            blockItem.setRegistryName(block.getRegistryName());
+            registry.register(blockItem);
+        });
+        
+		LOGGER.debug("Registered BlockItems!");
+     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
     	ModOreGen.generate();
+    }
+    
+    private void clientRegistries(final FMLClientSetupEvent event) 
+    {
+    	
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) 
