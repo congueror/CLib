@@ -1,9 +1,0 @@
-{
-  "type": "blasting",
-  "ingredient": {
-    "item": "clib:tin_ore"
-  },
-  "result": "clib:tin_ingot",
-  "experience": 0.7,
-  "cookingtime": 400
-}
