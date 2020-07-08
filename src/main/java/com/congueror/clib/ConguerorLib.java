@@ -6,18 +6,22 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.congueror.clib.config.config;
 import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ContainerTypes;
 import com.congueror.clib.init.ItemInit;
@@ -28,7 +32,7 @@ import com.congueror.clib.world.gen.ModOreGen;
 @Mod.EventBusSubscriber(modid = ConguerorLib.MOD_ID, bus = Bus.MOD)
 public class ConguerorLib
 {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID= "clib";
     public static ConguerorLib instance;
 
@@ -39,6 +43,12 @@ public class ConguerorLib
     	modEventBus.addListener(this::clientRegistries);
     	modEventBus.addListener(this::doClientStuff);
         instance=this;
+        
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, config.server_config);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, config.client_config);
+        
+        config.loadConfig(config.client_config, FMLPaths.CONFIGDIR.get().resolve("clib-client.toml").toString());
+        config.loadConfig(config.server_config, FMLPaths.CONFIGDIR.get().resolve("clib-server.toml").toString());
         
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
