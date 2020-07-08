@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CI ",
+    "I  ",
+    "   "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+	"C": {
+		"item": "minecraft:coal"
+	}
+  },
+  "result": {
+    "item": "clib:steel_blend"
+  }
+}
