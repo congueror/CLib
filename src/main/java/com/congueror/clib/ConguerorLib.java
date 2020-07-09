@@ -15,13 +15,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.congueror.clib.config.config;
+import com.congueror.clib.config.Config;
 import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ContainerTypes;
 import com.congueror.clib.init.ItemInit;
@@ -38,17 +37,14 @@ public class ConguerorLib
 
     public ConguerorLib() 
     {
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
+    	
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	modEventBus.addListener(this::setup);
     	modEventBus.addListener(this::clientRegistries);
     	modEventBus.addListener(this::doClientStuff);
         instance=this;
-        
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, config.server_config);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, config.client_config);
-        
-        config.loadConfig(config.client_config, FMLPaths.CONFIGDIR.get().resolve("clib-client.toml").toString());
-        config.loadConfig(config.server_config, FMLPaths.CONFIGDIR.get().resolve("clib-server.toml").toString());
         
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
