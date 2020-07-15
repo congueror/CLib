@@ -20,7 +20,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.congueror.clib.config.Config;
+import com.congueror.clib.config.ClibConfig;
 import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ContainerTypes;
 import com.congueror.clib.init.ItemInit;
@@ -37,8 +37,7 @@ public class ConguerorLib
 
     public ConguerorLib() 
     {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClibConfig.spec);
     	
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	modEventBus.addListener(this::setup);

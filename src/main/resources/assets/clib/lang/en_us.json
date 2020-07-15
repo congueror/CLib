@@ -7,12 +7,16 @@
 	"item.clib.aluminum_nugget": "Aluminum Nugget",
 	"item.clib.coal_nugget": "Coal Nugget",
 	"item.clib.steel_blend": "Steel Blend",
+	"item.clib.copper_ingot": "Copper Ingot",
+	"item.clib.copper_nugget": "Copper Nugget",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
 	"block.clib.steel_block": "Block of Steel",
 	"block.clib.aluminum_ore": "Aluminum Ore",
 	"block.clib.aluminum_block": "Block of Aluminum",
+	"block.clib.copper_ore": "Copper Ore",
+	"block.clib.copper_block": "Block of Copper",
 	
 	"itemGroup.clibtab": "Congueror's Lib Ores"
 }

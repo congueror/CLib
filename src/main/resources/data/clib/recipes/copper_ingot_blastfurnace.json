@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:copper_ore"
+  },
+  "result": "clib:copper_ingot",
+  "experience": 0.7,
+  "cookingtime": 400
+}

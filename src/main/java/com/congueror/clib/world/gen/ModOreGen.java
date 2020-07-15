@@ -1,6 +1,6 @@
 package com.congueror.clib.world.gen;
 
-import com.congueror.clib.config.Config;
+import com.congueror.clib.config.ClibConfig;
 import com.congueror.clib.init.BlockInit;
 
 import net.minecraft.world.biome.Biome;
@@ -18,9 +18,11 @@ public class ModOreGen
 		for(Biome biome : ForgeRegistries.BIOMES) 
 		{ 
 			biome.addFeature(Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.TIN_ORE.get().getDefaultState(), 10)).withPlacement(Placement.COUNT_RANGE
-					.configure(new CountRangeConfig(Config.tin_chance.get(), Config.tin_min.get(), 0, Config.tin_max.get()))));
+					.configure(new CountRangeConfig(ClibConfig.tin_chance.get(), ClibConfig.tin_min.get(), 0, ClibConfig.tin_max.get()))));
 			biome.addFeature(Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.ALUMINUM_ORE.get().getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE
-					.configure(new CountRangeConfig(Config.alum_chance.get(), Config.alum_min.get(), 0, Config.alum_max.get()))));
+					.configure(new CountRangeConfig(ClibConfig.alum_chance.get(), ClibConfig.alum_min.get(), 0, ClibConfig.alum_max.get()))));
+			biome.addFeature(Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.COPPER_ORE.get().getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE
+					.configure(new CountRangeConfig(ClibConfig.copper_chance.get(), ClibConfig.copper_min.get(), 0, ClibConfig.copper_max.get()))));
 		}
 	}
 	public static void generate() 
