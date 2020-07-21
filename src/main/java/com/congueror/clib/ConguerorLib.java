@@ -79,7 +79,8 @@ public class ConguerorLib
     	
     }
 
-    private void doClientStuff(final FMLClientSetupEvent event) 
+    @SuppressWarnings("resource")
+	private void doClientStuff(final FMLClientSetupEvent event) 
     {
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
