@@ -24,6 +24,7 @@ import com.congueror.clib.config.ClibConfig;
 import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ContainerTypes;
 import com.congueror.clib.init.ItemInit;
+import com.congueror.clib.init.RecipeSerializerInit;
 import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.world.gen.ModOreGen;
 
@@ -49,6 +50,7 @@ public class ConguerorLib
         BlockInit.BLOCKS.register(modEventBus);
         TileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ContainerTypes.CONTAINER_TYPES.register(modEventBus);
+        RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

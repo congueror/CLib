@@ -9,6 +9,7 @@
 	"item.clib.steel_blend": "Steel Blend",
 	"item.clib.copper_ingot": "Copper Ingot",
 	"item.clib.copper_nugget": "Copper Nugget",
+	"item.clib.ruby": "Ruby",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -17,6 +18,8 @@
 	"block.clib.aluminum_block": "Block of Aluminum",
 	"block.clib.copper_ore": "Copper Ore",
 	"block.clib.copper_block": "Block of Copper",
+	"block.clib.ruby_ore": "Nether Ruby Ore",
+	"block.clib.ruby_block": "Block of Ruby",
 	
 	"itemGroup.clibtab": "Congueror's Ores"
 }

@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "clib:ruby_ore"
+  },
+  "result": "clib:ruby",
+  "experience": 3.2,
+  "cookingtime": 200
+}

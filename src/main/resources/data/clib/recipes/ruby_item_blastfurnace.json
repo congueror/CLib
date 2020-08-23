@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:ruby_ore"
+  },
+  "result": "clib:ruby",
+  "experience": 3.4,
+  "cookingtime": 400
+}

@@ -12,6 +12,7 @@ public class ClibConfig
     public static final String SUBCATEGORY_TIN = "Tin Ore";
     public static final String SUBCATEGORY_ALUMINUM = "Aluminum Ore";
     public static final String SUBCATEGORY_COPPER = "Copper Ore";
+    public static final String SUBCATEGORY_RUBY = "Ruby Ore";
     
     public static ForgeConfigSpec spec;
     
@@ -26,6 +27,10 @@ public class ClibConfig
     public static ForgeConfigSpec.IntValue copper_chance;
     public static ForgeConfigSpec.IntValue copper_min;
     public static ForgeConfigSpec.IntValue copper_max;
+    
+    public static ForgeConfigSpec.IntValue ruby_chance;
+    public static ForgeConfigSpec.IntValue ruby_min;
+    public static ForgeConfigSpec.IntValue ruby_max;
     
     static {
         ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
@@ -43,7 +48,7 @@ public class ClibConfig
         		alum_min = BUILDER
         				.comment("Minimum y value the ore can generate at (must always be lower than maximum value) [default=5]")
         				.translation("alum_min_comment")
-        				.defineInRange("alum_min", 5, 0, 255);
+        				.defineInRange("alum_min", 0, 0, 255);
         		alum_max = BUILDER
         				.comment("Maximum y value the ore can generate at (must always be higher than minimum value) [default=60]")
         				.translation("alum_max_comment")
@@ -58,7 +63,7 @@ public class ClibConfig
         		tin_min = BUILDER
         				.comment("Minimum y value the ore can generate at (must always be lower than maximum value) [default=5]")
         				.translation("tin_min_comment")
-        				.defineInRange("tin_min", 5, 0, 255);
+        				.defineInRange("tin_min", 0, 0, 255);
         		tin_max = BUILDER
         				.comment("Maximum y value the ore can generate at (must always be higher than minimum value) [default=60]")
         				.translation("tin_max_comment")
@@ -73,11 +78,26 @@ public class ClibConfig
     		copper_min = BUILDER
     				.comment("Minimum y value the ore can generate at (must always be lower than maximum value) [default=5]")
     				.translation("copper_min_comment")
-    				.defineInRange("copper_min", 5, 0, 255);
+    				.defineInRange("copper_min", 0, 0, 255);
     		copper_max = BUILDER
     				.comment("Maximum y value the ore can generate at (must always be higher than minimum value) [default=60]")
     				.translation("copper_max_comment")
     				.defineInRange("copper_max", 60, 0, 255);
+    		BUILDER.pop();
+    		
+    		BUILDER.comment("Ruby Settings").push(SUBCATEGORY_RUBY);
+    		ruby_chance = BUILDER
+    				.comment("Maximum number of ore veins per chunk (set 0 to disable spawns) [deafult=15]")
+    				.translation("ruby_chance_comment")
+    				.defineInRange("ruby_chance", 3, 0, 50);
+    		ruby_min = BUILDER
+    				.comment("Minimum y value the ore can generate at (must always be lower than maximum value) [default=5]")
+    				.translation("ruby_min_comment")
+    				.defineInRange("ruby_min", 8, 0, 255);
+    		ruby_max = BUILDER
+    				.comment("Maximum y value the ore can generate at (must always be higher than minimum value) [default=60]")
+    				.translation("ruby_max_comment")
+    				.defineInRange("ruby_max", 20, 0, 255);
     		BUILDER.pop();
         BUILDER.pop();
         
