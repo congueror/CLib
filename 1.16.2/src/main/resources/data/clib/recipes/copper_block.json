@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "clib:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "clib:copper_block"
+  }
+}

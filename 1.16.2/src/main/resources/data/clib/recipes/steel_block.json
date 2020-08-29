@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "clib:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "clib:steel_block"
+  }
+}

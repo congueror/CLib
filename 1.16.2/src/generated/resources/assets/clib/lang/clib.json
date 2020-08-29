@@ -1,0 +1,20 @@
+{
+  "block.clib.aluminum_block": "Block of Aluminum",
+  "block.clib.aluminum_ore": "Aluminum Ore",
+  "block.clib.copper_block": "Block of Copper",
+  "block.clib.copper_ore": "Copper Ore",
+  "block.clib.steel_block": "Block of Steel",
+  "block.clib.tin_block": "Block of Tin",
+  "block.clib.tin_ore": "Tin Ore",
+  "item.clib.aluminum_ingot": "Aluminum Ingot",
+  "item.clib.aluminum_nugget": "Aluminum Nugget",
+  "item.clib.coal_nugget": "Coal Nugget",
+  "item.clib.copper_ingot": "Copper Ingot",
+  "item.clib.copper_nugget": "Copper Nugget",
+  "item.clib.steel_blend": "Steel Blend",
+  "item.clib.steel_ingot": "Steel Ingot",
+  "item.clib.steel_nugget": "Steel Nugget",
+  "item.clib.tin_ingot": "Tin Ingot",
+  "item.clib.tin_nugget": "Tin Nugget",
+  "itemGroup.clibtab": "Congueror's Ores"
+}

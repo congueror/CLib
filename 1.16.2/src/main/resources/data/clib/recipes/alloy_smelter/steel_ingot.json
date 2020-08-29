@@ -1,0 +1,10 @@
+{
+	"type": "clib:alloy_smelter",
+	"output": {
+		"item": "clib:steel_ingot"
+	},
+	
+	"input": {
+		"item": "clib:steel_blend"
+	}
+}

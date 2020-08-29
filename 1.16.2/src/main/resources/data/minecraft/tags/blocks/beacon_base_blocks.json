@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "clib:tin_block",
+    "clib:steel_block",
+    "clib:aluminum_block",
+    "clib:lead_block",
+    "clib:copper_block",
+    "clib:ruby_block"
+  ]
+}
