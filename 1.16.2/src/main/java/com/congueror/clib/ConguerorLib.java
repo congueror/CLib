@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -41,7 +42,7 @@ public class ConguerorLib
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClibConfig.spec);
     	
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-    	modEventBus.addListener(this::CommonSetup);
+    	modEventBus.addListener(this::commonSetup);
     	modEventBus.addListener(this::clientRegistries);
     	modEventBus.addListener(this::doClientStuff);
         instance=this;
@@ -52,8 +53,6 @@ public class ConguerorLib
         ContainerTypes.CONTAINER_TYPES.register(modEventBus);
         //RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
         
-        ModOreGen.initOres();
-
         MinecraftForge.EVENT_BUS.register(this);
     }
     
@@ -74,10 +73,9 @@ public class ConguerorLib
      }
     
     @SubscribeEvent
-    public void CommonSetup(final FMLCommonSetupEvent event)
+    public void commonSetup(final FMLCommonSetupEvent event)
     {
-    	ModOreGen.setupOres();
-    	ModOreGen.initOres();
+    	
     }
     
     private void clientRegistries(final FMLClientSetupEvent event) 
@@ -95,5 +93,12 @@ public class ConguerorLib
     public void onServerStarting(FMLServerStartingEvent event) 
     {
     	
+    }
+    
+    @SubscribeEvent
+    public void loadComplete(FMLLoadCompleteEvent event) 
+    {  
+    	ModOreGen.setupOres();
+    	ModOreGen.initOres();
     }
 }
