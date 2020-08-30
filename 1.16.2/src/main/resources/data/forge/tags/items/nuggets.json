@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:nuggest/aluminum",
+    "#forge:nuggest/copper",
+    "#forge:nuggest/lead",
+    "#forge:nuggest/tin",
+    "#forge:nuggest/steel"
+  ]
+} 

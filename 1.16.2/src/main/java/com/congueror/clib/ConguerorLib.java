@@ -41,7 +41,7 @@ public class ConguerorLib
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClibConfig.spec);
     	
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-    	modEventBus.addListener(this::setup);
+    	modEventBus.addListener(this::CommonSetup);
     	modEventBus.addListener(this::clientRegistries);
     	modEventBus.addListener(this::doClientStuff);
         instance=this;
@@ -72,17 +72,19 @@ public class ConguerorLib
         
 		LOGGER.debug("Registered BlockItems!");
      }
-
-    private void setup(final FMLCommonSetupEvent event)
+    
+    @SubscribeEvent
+    public void CommonSetup(final FMLCommonSetupEvent event)
     {
     	ModOreGen.setupOres();
+    	ModOreGen.initOres();
     }
     
     private void clientRegistries(final FMLClientSetupEvent event) 
     {
     	
     }
-
+    
     @SuppressWarnings("resource")
 	private void doClientStuff(final FMLClientSetupEvent event) 
     {

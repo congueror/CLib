@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "clib:tin_ingot",
+    "clib:steel_ingot",
+    "clib:aluminum_ingot",
+    "clib:lead_ingot",
+    "clib:copper_ingot",
+    "clib:ruby"
+  ]
+}
