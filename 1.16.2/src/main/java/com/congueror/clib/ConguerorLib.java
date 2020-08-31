@@ -27,7 +27,7 @@ import com.congueror.clib.init.ContainerTypes;
 import com.congueror.clib.init.ItemInit;
 import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.util.ClibItemGroup;
-import com.congueror.clib.world.gen.ModOreGen;
+import com.congueror.clib.world.gen.ModOreGen2;
 
 @Mod("clib")
 @Mod.EventBusSubscriber(modid = ConguerorLib.MOD_ID, bus = Bus.MOD)
@@ -52,7 +52,7 @@ public class ConguerorLib
         TileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ContainerTypes.CONTAINER_TYPES.register(modEventBus);
         //RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
-        
+                
         MinecraftForge.EVENT_BUS.register(this);
     }
     
@@ -83,7 +83,7 @@ public class ConguerorLib
     	
     }
     
-    @SuppressWarnings("resource")
+	@SuppressWarnings("resource")
 	private void doClientStuff(final FMLClientSetupEvent event) 
     {
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
@@ -98,7 +98,7 @@ public class ConguerorLib
     @SubscribeEvent
     public void loadComplete(FMLLoadCompleteEvent event) 
     {  
-    	ModOreGen.setupOres();
-    	ModOreGen.initOres();
+        ModOreGen2.initOres();
+    	ModOreGen2.setupOres();
     }
 }

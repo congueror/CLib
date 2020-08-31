@@ -26,14 +26,14 @@ import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 @SuppressWarnings("unused")
 public class ModOreGen 
 {
-	
+//Vein Size, Chance, Min, Max, Vein Count
 
-	public static void initOres() {
+	/*public static void initOres() {
 		if(ClibConfig.alum_gen.get()) {
 		Registry.register(WorldGenRegistries.field_243653_e, BlockInit.ALUMINUM_ORE.get().getRegistryName(),Feature.ORE.withConfiguration
-				(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.ALUMINUM_ORE.get().getDefaultState(), 4/*Vein Size*/)).withPlacement(Placement.field_242907_l.configure
-				(new TopSolidRangeConfig(ClibConfig.alum_chance.get(), ClibConfig.alum_min.get(), ClibConfig.alum_max.get()))).func_242728_a().func_242731_b(10/*Vein Count*/));
-		}	
+				(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.ALUMINUM_ORE.get().getDefaultState(), 4)).withPlacement(Placement.field_242907_l.configure
+				(new TopSolidRangeConfig(ClibConfig.alum_chance.get(), ClibConfig.alum_min.get(), ClibConfig.alum_max.get()))).func_242728_a().func_242731_b(10));
+		}
 	}
 	@SuppressWarnings("deprecation")
 	public static void setupOres() {
@@ -48,7 +48,7 @@ public class ModOreGen
 						WorldGenRegistries.field_243653_e.getOrDefault(BlockInit.ALUMINUM_ORE.get().getRegistryName()));
 			}
 			//Nether
-			if (biome.getValue().getCategory().equals(Biome.Category.NETHER)
+			/*if (biome.getValue().getCategory().equals(Biome.Category.NETHER)
 					&& ClibConfig.ruby_gen.get()) {
 				
 				
@@ -56,8 +56,8 @@ public class ModOreGen
 						WorldGenRegistries.field_243653_e
 								.getOrDefault(BlockInit.RUBY_ORE.get().getRegistryName()));
 
-			}
-		}
+			}*/
+		/*}
 	}
 
 	public static void addFeatureToBiome(Biome biome, GenerationStage.Decoration decoration,
@@ -73,5 +73,5 @@ public class ModOreGen
 
 		ObfuscationReflectionHelper.setPrivateValue(BiomeGenerationSettings.class, biome.func_242440_e(), biomeFeatures,
 				"field_242484_f");
-	}
+	}*/
 }

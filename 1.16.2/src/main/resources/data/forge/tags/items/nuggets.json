@@ -1,10 +1,11 @@
 {
   "replace": false,
   "values": [
-    "#forge:nuggest/aluminum",
-    "#forge:nuggest/copper",
-    "#forge:nuggest/lead",
-    "#forge:nuggest/tin",
-    "#forge:nuggest/steel"
+    "#forge:nuggets/aluminum",
+    "#forge:nuggets/copper",
+    "#forge:nuggets/lead",
+    "#forge:nuggets/tin",
+    "#forge:nuggets/steel",
+    "#forge:nuggets/coal"
   ]
 } 
