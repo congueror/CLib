@@ -5,6 +5,7 @@
     "1.16.2-recommended": "0.2.0"
   },
   "1.16.2": {
+	"0.2.1": "Fixed update.json",
 	"0.2.0": "Updated mods.toml",
 	"0.1.0": "Initial release"
   }
