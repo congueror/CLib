@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "clib:silver_nugget"
+    }
+  },
+  "result": {
+    "item": "clib:silver_ingot"
+  }
+}

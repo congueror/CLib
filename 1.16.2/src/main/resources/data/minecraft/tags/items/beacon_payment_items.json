@@ -6,6 +6,10 @@
     "clib:aluminum_ingot",
     "clib:lead_ingot",
     "clib:copper_ingot",
-    "clib:ruby"
+    "clib:ruby",
+    "clib:silver_ingot",
+    "clib:lumium_ingot",
+    "clib:nickel_ingot",
+    "clib:invar_ingot"
   ]
 }

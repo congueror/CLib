@@ -6,6 +6,10 @@
     "clib:aluminum_block",
     "clib:lead_block",
     "clib:copper_block",
-    "clib:ruby_block"
+    "clib:ruby_block",
+    "clib:silver_block",
+    "clib:lumium_block",
+    "clib:nickel_block",
+    "clib:invar_block"
   ]
 }

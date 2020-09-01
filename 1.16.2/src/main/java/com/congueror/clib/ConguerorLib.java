@@ -27,7 +27,7 @@ import com.congueror.clib.init.ContainerTypes;
 import com.congueror.clib.init.ItemInit;
 import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.util.ClibItemGroup;
-import com.congueror.clib.world.gen.ModOreGen2;
+import com.congueror.clib.world.gen.ModOreGen;
 
 @Mod("clib")
 @Mod.EventBusSubscriber(modid = ConguerorLib.MOD_ID, bus = Bus.MOD)
@@ -75,7 +75,7 @@ public class ConguerorLib
     @SubscribeEvent
     public void commonSetup(final FMLCommonSetupEvent event)
     {
-    	ModOreGen2.addFeatures();
+    	ModOreGen.addFeatures();
     }
     
     private void clientRegistries(final FMLClientSetupEvent event) 

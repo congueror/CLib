@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "clib:invar_blend"
+  },
+  "result": "clib:invar_ingot",
+  "experience": 1.5,
+  "cookingtime": 500
+}

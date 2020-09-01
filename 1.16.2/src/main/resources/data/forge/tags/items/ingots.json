@@ -5,6 +5,10 @@
     "#forge:ingots/copper",
     "#forge:ingots/lead",
     "#forge:ingots/tin",
-    "#forge:ingots/steel"
+    "#forge:ingots/steel",
+    "#forge:ingots/silver",
+    "#forge:ingots/lumium",
+    "#forge:ingots/nickel",
+    "#forge:ingots/invar"
   ]
 } 

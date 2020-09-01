@@ -4,35 +4,35 @@ loaderVersion="[33,)" #mandatory This is typically bumped every Minecraft versio
 
 license="GNU General Public License v3.0"
 
-issueTrackerURL="http://my.issue.tracker/" #optional
+issueTrackerURL="https://github.com/congueror/CLib/issues" #optional
 
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 
 modId="clib" #mandatory
 
-version="0.1" #mandatory
+version="0.2.1" #mandatory
 
 displayName="Conguerors Library" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="https://raw.githubusercontent.com/congueror/CLib/master/update.json" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="http://example.com/" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/clib" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="logo.png" #optional
 
 # A text field displayed in the mod UI
-credits="Congueror(me), paint.net(for texture making)" #optional
+credits="Congueror(me), paint.net(for texture making), The nice people of MMD Discord Server https://discord.mcmoddev.com/ and of Forge Discord Server  https://discord.gg/UvedJ9m, TurtyWurty for the tutorials https://discord.gg/d5cGhKQ" #optional
 
 # A text field displayed in the mod UI
 authors="Congueror" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-desc
+Adds a bunch o' ores
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.clib]] #optional

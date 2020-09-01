@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:lumium_ingot"
+    }
+  ],
+  "result": {
+	"count": 9,
+    "item": "clib:lumium_nugget"
+  }
+}
