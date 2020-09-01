@@ -1,7 +1,8 @@
 {
   "homepage": "https://github.com/congueror/CLib",
   "promos": {
-    "1.16.2-latest": "0.1.0"
+    "1.16.2-latest": "0.2.0",
+    "1.16.2-recommended": "0.2.0"
   },
   "1.16.2": {
 	"0.2.0": "Updated mods.toml",
