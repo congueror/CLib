@@ -75,7 +75,7 @@ public class ConguerorLib
     @SubscribeEvent
     public void commonSetup(final FMLCommonSetupEvent event)
     {
-    	
+    	ModOreGen2.addFeatures();
     }
     
     private void clientRegistries(final FMLClientSetupEvent event) 
@@ -98,7 +98,6 @@ public class ConguerorLib
     @SubscribeEvent
     public void loadComplete(FMLLoadCompleteEvent event) 
     {  
-        ModOreGen2.initOres();
-    	ModOreGen2.setupOres();
+        
     }
 }
