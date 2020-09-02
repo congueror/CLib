@@ -12,6 +12,7 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class ConfiguredOreGenFeatures 
 {
+	//Vein Size?, Max Height, Chance?
 	public static ConfiguredFeature<?, ?> ORE_ALUMINUM = newConfiguredFeature("ore_aluminum", Feature.ORE.withConfiguration
 			(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.ALUMINUM_ORE.get().getDefaultState(), 8)).func_242733_d(25).func_242728_a().func_242731_b(2));
 	
@@ -32,6 +33,9 @@ public class ConfiguredOreGenFeatures
 	
 	public static ConfiguredFeature<?, ?> ORE_NICKEL = newConfiguredFeature("ore_nickel", Feature.ORE.withConfiguration
 			(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.NICKEL_ORE.get().getDefaultState(), 8)).func_242733_d(25).func_242728_a().func_242731_b(2));
+	
+	public static ConfiguredFeature<?, ?> ORE_SULFUR = newConfiguredFeature("ore_sulfur", Feature.ORE.withConfiguration
+			(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.SULFUR_ORE.get().getDefaultState(), 8)).func_242733_d(25).func_242728_a().func_242731_b(2));
 
     public static ConfiguredFeature<?, ?> newConfiguredFeature(String registryName, ConfiguredFeature<?, ?> configuredFeature) {
         Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation(ConguerorLib.MOD_ID, registryName), configuredFeature);

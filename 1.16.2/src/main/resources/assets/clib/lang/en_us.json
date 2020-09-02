@@ -22,6 +22,19 @@
 	"item.clib.invar_ingot": "Invar Ingot",
 	"item.clib.invar_blend": "Invar Blend",
 	"item.clib.invar_nugget": "Invar Nugget",
+	"item.clib.electrum_ingot": "Electrum Ingot",
+	"item.clib.electrum_blend": "Electrum Blend",
+	"item.clib.electrum_nugget": "Electrum Nugget",
+	"item.clib.pyrotheum_dust": "Pyrotheum Dust",
+	"item.clib.sulfur_dust": "Sulfur Dust",
+	"item.clib.platinum_ingot": "Platinum Ingot",
+	"item.clib.platinum_nugget": "Platinum Nugget",
+	"item.clib.enderium_ingot": "Enderium Ingot",
+	"item.clib.enderium_blend": "Enderium Blend",
+	"item.clib.enderium_nugget": "Enderium Nugget",
+	"item.clib.signalum_ingot": "Signalum Ingot",
+	"item.clib.signalum_blend": "Signalum Blend",
+	"item.clib.signalum_nugget": "Signalum Nugget",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -40,6 +53,12 @@
 	"block.clib.nickel_block": "Block of Nickel",
 	"block.clib.lumium_block": "Block of Lumium",
 	"block.clib.invar_block": "Block of Invar",
+	"block.clib.electrum_block": "Block of Electrum",
+	"block.clib.sulfur_ore": "Sulfur Ore",
+	"block.clib.platinum_ore": "Platinum Ore",
+	"block.clib.platinum_block": "Block of Platinum",
+	"block.clib.enderium_block": "Block of Enderium",
+	"block.clib.signalum_block": "Block of Signalum",
 	
-	"itemGroup.clibtab": "Congueror's Ores"
+	"itemGroup.clibtab": "Conguerors Ores"
 }

@@ -10,6 +10,10 @@
     "#forge:nuggets/silver",
     "#forge:nuggets/lumium",
     "#forge:nuggets/nickel",
-    "#forge:nuggets/invar"
+    "#forge:nuggets/invar",
+    "#forge:nuggets/electrum",
+    "#forge:nuggets/platinum",
+    "#forge:nuggets/enderium",
+    "#forge:nuggets/signalum"
   ]
 } 

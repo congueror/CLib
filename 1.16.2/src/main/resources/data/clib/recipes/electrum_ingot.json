@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "BPB",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+	"B": {
+		"tag": "forge:blends/enderium"
+	},
+	"P": {
+		"tag": "forge:dust/pyrotheum"
+	}
+  },
+  "result": {
+    "item": "clib:enderium_ingot"
+  }
+}

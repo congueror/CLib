@@ -1,9 +1,9 @@
 {
   "type": "blasting",
   "ingredient": {
-    "item": "clib:lead_ore"
+    "item": "clib:platinum_ore"
   },
-  "result": "clib:lead_ingot",
+  "result": "clib:platinum_ingot",
   "experience": 0.7,
   "cookingtime": 400
 }

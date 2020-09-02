@@ -11,10 +11,11 @@ public class RockBlock extends OreBlock
 	public RockBlock(Properties properties) 
 	{
 		super(properties);
-	}
+	} 
 	
 	public int getExperience(Random random) 
 	{
 		return MathHelper.nextInt(random, 2, 10);
 	}
+	
 }

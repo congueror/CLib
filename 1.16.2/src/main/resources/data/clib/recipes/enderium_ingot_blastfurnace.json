@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:electrum_blend"
+  },
+  "result": "clib:electrum_ingot",
+  "experience": 1.5,
+  "cookingtime": 450
+}

@@ -7,10 +7,10 @@
   ],
   "key": {
     "I": {
-      "item": "clib:lead_nugget"
+      "item": "clib:platinum_nugget"
     }
   },
   "result": {
-    "item": "clib:lead_ingot"
+    "item": "clib:platinum_ingot"
   }
 }

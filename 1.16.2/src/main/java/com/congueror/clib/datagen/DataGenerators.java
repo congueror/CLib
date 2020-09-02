@@ -18,7 +18,7 @@ public class DataGenerators
         
         if (event.includeServer()) 
         {
-        	//generator.addProvider(new RecipesDataGen(generator));
+        	generator.addProvider(new RecipeDataGen(generator));
             //generator.addProvider(new LootTablesDataGen(generator));
             //generator.addProvider(new BlockTagsDataGen(generator));
             //generator.addProvider(new ItemTagsDataGen(generator));

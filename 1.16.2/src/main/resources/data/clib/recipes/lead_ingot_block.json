@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "clib:lead_block"
+      "item": "clib:platinum_block"
     }
   ],
   "result": {
 	"count": 9,
-    "item": "clib:lead_ingot"
+    "item": "clib:platinum_ingot"
   }
 }

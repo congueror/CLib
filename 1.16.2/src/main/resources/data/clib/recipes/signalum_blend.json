@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "RCR",
+    "RRR"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/silver"
+    },
+	"C": {
+		"tag": "forge:ingots/copper"
+	},
+	"R": {
+		"tag": "forge:dusts/redstone"
+	}
+  },
+  "result": {
+    "item": "clib:signalum_blend"
+  }
+}

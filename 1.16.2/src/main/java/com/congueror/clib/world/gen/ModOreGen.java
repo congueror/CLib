@@ -28,6 +28,7 @@ public class ModOreGen
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ConfiguredOreGenFeatures.ORE_LEAD);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ConfiguredOreGenFeatures.ORE_SILVER);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ConfiguredOreGenFeatures.ORE_NICKEL);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ConfiguredOreGenFeatures.ORE_SULFUR);
             }
             
             if(biome.getCategory() == Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {

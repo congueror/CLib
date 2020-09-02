@@ -3,6 +3,9 @@
   "values": [
     "#forge:blends/steel",
     "#forge:blends/lumium",
-    "#forge:blends/invar"
+    "#forge:blends/invar",
+    "#forge:blends/electrum",
+    "#forge:blends/enderium",
+    "#forge:blends/signalum"
   ]
 } 

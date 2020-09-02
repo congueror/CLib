@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB ",
+    "RS ",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "tag": "forge:dusts/blaze_powder"
+    },
+	"R": {
+		"tag": "forge:dusts/redstone"
+	},
+	"S": {
+		"tag": "forge:dusts/sulfur"
+	}
+  },
+  "result": {
+    "item": "clib:pyrotheum_dust"
+  }
+}

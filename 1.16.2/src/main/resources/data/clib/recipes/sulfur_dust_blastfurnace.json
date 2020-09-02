@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:sulfur_ore"
+  },
+  "result": "clib:sulfur_dust",
+  "experience": 0.7,
+  "cookingtime": 400
+}

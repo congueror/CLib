@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "C  ",
+    "   "
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/gold"
+    },
+	"C": {
+		"tag": "forge:ingots/silver"
+	}
+  },
+  "result": {
+    "item": "clib:electrum_blend"
+  }
+}

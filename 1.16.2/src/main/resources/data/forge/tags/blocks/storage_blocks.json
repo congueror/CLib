@@ -9,6 +9,11 @@
     "#forge:storage_blocks/ruby",
     "#forge:storage_blocks/lumium",
     "#forge:storage_blocks/nickel",
-    "#forge:storage_blocks/invar"
+    "#forge:storage_blocks/invar",
+    "#forge:storage_blocks/electrum",
+    "#forge:storage_blocks/platinum",
+    "#forge:storage_blocks/enderium",
+    "#forge:storage_blocks/signalum",
+    "#forge:storage_blocks/silver"
   ]
 } 

@@ -36,4 +36,17 @@ public class ItemInit
     public static final RegistryObject<Item> INVAR_INGOT = ITEMS.register("invar_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> INVAR_NUGGET = ITEMS.register("invar_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> INVAR_BLEND = ITEMS.register("invar_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> ELECTRUM_INGOT = ITEMS.register("electrum_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> ELECTRUM_NUGGET = ITEMS.register("electrum_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> ELECTRUM_BLEND = ITEMS.register("electrum_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> PYROTHEUM_DUST = ITEMS.register("pyrotheum_dust", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> SULFUR_DUST = ITEMS.register("sulfur_dust", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> ENDERIUM_INGOT = ITEMS.register("enderium_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> ENDERIUM_NUGGET = ITEMS.register("enderium_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> ENDERIUM_BLEND = ITEMS.register("enderium_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> SIGNALUM_INGOT = ITEMS.register("signalum_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> SIGNALUM_NUGGET = ITEMS.register("signalum_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> SIGNALUM_BLEND = ITEMS.register("signalum_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
 }

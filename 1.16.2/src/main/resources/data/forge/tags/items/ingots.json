@@ -9,6 +9,10 @@
     "#forge:ingots/silver",
     "#forge:ingots/lumium",
     "#forge:ingots/nickel",
-    "#forge:ingots/invar"
+    "#forge:ingots/invar",
+    "#forge:ingots/electrum",
+    "#forge:ingots/platinum",
+    "#forge:ingots/enderium",
+    "#forge:ingots/signalum"
   ]
 } 

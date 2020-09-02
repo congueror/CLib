@@ -18,4 +18,14 @@ public class ClibItemGroup extends ItemGroup
 	{
 		return new ItemStack(BlockInit.TIN_ORE.get());
 	}
+	
+	@Override
+	public boolean hasSearchBar() {
+		return true;
+	}
+	
+	@Override
+	public int getSearchbarWidth() {
+		return 79;
+	}
 }

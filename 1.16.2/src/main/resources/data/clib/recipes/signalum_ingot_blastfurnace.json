@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:signalum_blend"
+  },
+  "result": "clib:signalum_ingot",
+  "experience": 1.5,
+  "cookingtime": 450
+}
