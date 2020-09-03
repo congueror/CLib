@@ -9,6 +9,7 @@
     "#forge:ores/silver",
     "#forge:ores/nickel",
     "#forge:ores/sulfur",
-    "#forge:ores/platinum"
+    "#forge:ores/platinum",
+    "#forge:ores/tungsten"
   ]
 } 

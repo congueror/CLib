@@ -13,6 +13,7 @@
     "#forge:ingots/electrum",
     "#forge:ingots/platinum",
     "#forge:ingots/enderium",
-    "#forge:ingots/signalum"
+    "#forge:ingots/signalum",
+    "#forge:ingots/tungsten"
   ]
 } 

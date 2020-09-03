@@ -6,11 +6,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -38,14 +36,14 @@ public class ConguerorLib
     public static ConguerorLib instance;
 
     public ConguerorLib() 
-    {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClibConfig.spec);
-    	
+    {    	
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	modEventBus.addListener(this::commonSetup);
     	modEventBus.addListener(this::clientRegistries);
     	modEventBus.addListener(this::doClientStuff);
         instance=this;
+        
+        ClibConfig.init();
         
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
@@ -54,6 +52,8 @@ public class ConguerorLib
         //RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
                 
         MinecraftForge.EVENT_BUS.register(this);
+        
+        ClibConfig.load();
     }
     
     @SubscribeEvent

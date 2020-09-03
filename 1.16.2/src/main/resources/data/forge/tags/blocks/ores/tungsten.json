@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#forge:ingots",
-    "#forge:gems"
+    "clib:tungsten_ore"
   ]
-}
+} 

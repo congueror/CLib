@@ -35,6 +35,8 @@
 	"item.clib.signalum_ingot": "Signalum Ingot",
 	"item.clib.signalum_blend": "Signalum Blend",
 	"item.clib.signalum_nugget": "Signalum Nugget",
+	"item.clib.tungsten_blend": "Tungsten Blend",
+	"item.clib.tungsten_nugget": "Tungsten Nugget",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -59,6 +61,8 @@
 	"block.clib.platinum_block": "Block of Platinum",
 	"block.clib.enderium_block": "Block of Enderium",
 	"block.clib.signalum_block": "Block of Signalum",
+	"block.clib.tungsten_ore": "Tungsten Ore",
+	"block.clib.tungsten_block": "Block of Tungsten",
 	
 	"itemGroup.clibtab": "Conguerors Ores"
 }
