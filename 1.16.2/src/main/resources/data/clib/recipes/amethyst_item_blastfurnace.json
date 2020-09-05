@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:amethyst_ore"
+  },
+  "result": "clib:amethyst",
+  "experience": 3.4,
+  "cookingtime": 400
+}

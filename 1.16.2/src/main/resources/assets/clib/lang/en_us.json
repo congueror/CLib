@@ -35,8 +35,13 @@
 	"item.clib.signalum_ingot": "Signalum Ingot",
 	"item.clib.signalum_blend": "Signalum Blend",
 	"item.clib.signalum_nugget": "Signalum Nugget",
-	"item.clib.tungsten_blend": "Tungsten Blend",
+	"item.clib.tungsten_ingot": "Tungsten Ingot",
 	"item.clib.tungsten_nugget": "Tungsten Nugget",
+	"item.clib.bronze_ingot": "Bronze Ingot",
+	"item.clib.bronze_blend": "Bronze Blend",
+	"item.clib.bronze_nugget": "Bronze Nugget",
+	"item.clib.amethyst": "Amethyst",
+	"item.clib.sapphire": "Sapphire",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -63,6 +68,11 @@
 	"block.clib.signalum_block": "Block of Signalum",
 	"block.clib.tungsten_ore": "Tungsten Ore",
 	"block.clib.tungsten_block": "Block of Tungsten",
+	"block.clib.bronze_block": "Block of Bronze",
+	"block.clib.amethyst_ore": "Amethyst Ore",
+	"block.clib.amethyst_block": "Block of Amethyst",
+	"block.clib.sapphire_ore": "Sapphire Ore",
+	"block.clib.sapphire_block": "Block of Sapphire",
 	
 	"itemGroup.clibtab": "Conguerors Ores"
 }

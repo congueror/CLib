@@ -10,6 +10,8 @@
     "#forge:ores/nickel",
     "#forge:ores/sulfur",
     "#forge:ores/platinum",
-    "#forge:ores/tungsten"
+    "#forge:ores/tungsten",
+    "#forge:ores/amethyst",
+    "#forge:ores/sapphire"
   ]
 } 

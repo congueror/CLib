@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#forge:gems/ruby"
+    "#forge:gems/ruby",
+    "#forge:gems/amethyst",
+    "#forge:gems/sapphire"
   ]
 } 

@@ -21,18 +21,70 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = ConguerorLib.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModOreGen
 {
-	public static ConfiguredFeature<?, ?> ORE_ALUMINUM = configuredFeature("ore_aluminum", Feature.ORE.withConfiguration(new OreFeatureConfig
-			(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.ALUMINUM_ORE.get().getDefaultState(), 8)).func_242733_d(25).func_242728_a().func_242731_b(2));
-	
-	public static ConfiguredFeature<?, ?> ORE_RUBY = configuredFeature("ore_ruby", Feature.ORE.withConfiguration(new OreFeatureConfig
-			(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.RUBY_ORE.get().getDefaultState(), 8)).func_242733_d(25).func_242728_a().func_242731_b(2));
+	//Veinsize, Maxheight, AttemptPerChunk
+	public static ConfiguredFeature<?, ?> ORE_TIN;
+	public static ConfiguredFeature<?, ?> ORE_ALUMINUM;
+	public static ConfiguredFeature<?, ?> ORE_COPPER;
+	public static ConfiguredFeature<?, ?> ORE_LEAD;
+	public static ConfiguredFeature<?, ?> ORE_SILVER;
+	public static ConfiguredFeature<?, ?> ORE_NICKEL;
+	public static ConfiguredFeature<?, ?> ORE_SULFUR;
+	public static ConfiguredFeature<?, ?> ORE_PLATINUM;
+	public static ConfiguredFeature<?, ?> ORE_TUNGSTEN;
+	public static ConfiguredFeature<?, ?> ORE_RUBY;
+	public static ConfiguredFeature<?, ?> ORE_AMETHYST;
+	public static ConfiguredFeature<?, ?> ORE_SAPPHIRE;
 	
 	@SuppressWarnings("deprecation")
 	public static void addFeatures() {
+		ModOreGen.ORE_TIN = configuredFeature("ore_tin", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TIN_ORE.get().getDefaultState(), 8)).func_242733_d(60).func_242728_a().func_242731_b(5));
+		
+		ModOreGen.ORE_ALUMINUM = configuredFeature("ore_aluminum", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.ALUMINUM_ORE.get().getDefaultState(), 8)).func_242733_d(25).func_242728_a().func_242731_b(4));
+		
+		ModOreGen.ORE_COPPER = configuredFeature("ore_copper", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.COPPER_ORE.get().getDefaultState(), 8)).func_242733_d(60).func_242728_a().func_242731_b(5));
+		
+		ModOreGen.ORE_LEAD = configuredFeature("ore_lead", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.LEAD_ORE.get().getDefaultState(), 8)).func_242733_d(20).func_242728_a().func_242731_b(4));
+		
+		ModOreGen.ORE_SILVER = configuredFeature("ore_silver", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.SILVER_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(3));
+		
+		ModOreGen.ORE_NICKEL = configuredFeature("ore_nickel", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.NICKEL_ORE.get().getDefaultState(), 8)).func_242733_d(20).func_242728_a().func_242731_b(4));
+		
+		ModOreGen.ORE_SULFUR = configuredFeature("ore_sulfur", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.SULFUR_ORE.get().getDefaultState(), 8)).func_242733_d(100).func_242728_a().func_242731_b(6));
+		
+		ModOreGen.ORE_PLATINUM = configuredFeature("ore_platinum", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.PLATINUM_ORE.get().getDefaultState(), 8)).func_242733_d(8).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_TUNGSTEN = configuredFeature("ore_tungsten", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TUNGSTEN_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(2));
+		
+		ModOreGen.ORE_RUBY = configuredFeature("ore_ruby", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.RUBY_ORE.get().getDefaultState(), 8)).func_242733_d(18).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_AMETHYST = configuredFeature("ore_amethyst", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.AMETHYST_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_SAPPHIRE = configuredFeature("ore_sapphire", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.SAPPHIRE_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(1));
+	
         for (final Biome biome : WorldGenRegistries.field_243657_i) {
             if (biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TIN);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_ALUMINUM);
-                
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_COPPER);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_LEAD);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_SILVER);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_SULFUR);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_PLATINUM);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TUNGSTEN);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_AMETHYST);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_SAPPHIRE);
             }
             if (biome.getCategory() == Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_RUBY);

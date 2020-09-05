@@ -21,12 +21,12 @@ import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ItemInit;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import com.congueror.clib.config.ClibConfig;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.ModLoadingContext;
 import org.apache.logging.log4j.Logger;
 import net.minecraftforge.fml.common.Mod;
 
+@SuppressWarnings("unused")
 @Mod("clib")
 @Mod.EventBusSubscriber(modid = "clib", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ConguerorLib
@@ -37,7 +37,7 @@ public class ConguerorLib
     
     public ConguerorLib() {
     	
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClibConfig.spec);
+        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ClibConfig.spec);
         
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         
@@ -77,6 +77,7 @@ public class ConguerorLib
     
     @SubscribeEvent
     public void commonSetup(final FMLCommonSetupEvent event) {
+    	ModOreGen.addFeatures();
     }
     
     private void clientRegistries(final FMLClientSetupEvent event) {
@@ -98,7 +99,6 @@ public class ConguerorLib
     
     @SubscribeEvent
     public void aboutToStart(final FMLServerAboutToStartEvent event) {
-    	ModOreGen.addFeatures();
     }
     
     static {

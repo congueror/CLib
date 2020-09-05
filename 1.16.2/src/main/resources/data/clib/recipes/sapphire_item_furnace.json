@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "clib:sapphire_ore"
+  },
+  "result": "clib:sapphire",
+  "experience": 3.2,
+  "cookingtime": 200
+}

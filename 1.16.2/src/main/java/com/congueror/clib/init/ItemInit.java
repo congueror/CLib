@@ -68,4 +68,12 @@ public class ItemInit
     
     public static final RegistryObject<Item> TUNGSTEN_INGOT = ITEMS.register("tungsten_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> TUNGSTEN_NUGGET = ITEMS.register("tungsten_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> BRONZEBLEND = ITEMS.register("bronze_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
 }
