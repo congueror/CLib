@@ -1,9 +1,11 @@
 package com.congueror.clib.util;
 
+import com.congueror.clib.ConguerorLib;
 import com.congueror.clib.init.BlockInit;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 
 public class ClibItemGroup extends ItemGroup
 {
@@ -11,6 +13,8 @@ public class ClibItemGroup extends ItemGroup
 	private ClibItemGroup(int index, String label) 
 	{
 		super(index, label);
+		this.setBackgroundImageName("clib_item_search.png");
+		this.setNoTitle();
 	}
 	
 	@Override
@@ -26,6 +30,11 @@ public class ClibItemGroup extends ItemGroup
 	
 	@Override
 	public int getSearchbarWidth() {
-		return 79;
+		return 88;
+	}
+	
+	@Override
+	public ResourceLocation getTabsImage() {
+		return new ResourceLocation(ConguerorLib.MOD_ID, "textures/gui/clib_tabs.png");
 	}
 }

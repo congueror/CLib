@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "clib:enderium_ingot"
+      "item": "clib:electrum_ingot"
     }
   ],
   "result": {
 	"count": 9,
-    "item": "clib:enderium_nugget"
+    "item": "clib:electrum_nugget"
   }
 }

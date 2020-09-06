@@ -13,7 +13,7 @@ public class LanguagesDataGen extends LanguageProvider
 
     @Override
     protected void addTranslations()
-    {
+    {    	
         add("item.clib.tin_ingot", "Tin Ingot");
         add("item.clib.tin_nugget", "Tin Nugget");
         add("item.clib.steel_ingot", "Steel Ingot");
@@ -34,6 +34,9 @@ public class LanguagesDataGen extends LanguageProvider
         add("item.clib.lumium_nugget", "Lumium Nugget");
         add("item.clib.nickel_ingot", "Nickel Ingot");
         add("item.clib.nickel_nugget", "Nickel Nugget");
+        add("item.clib.invar_ingot", "Invar Ingot");
+        add("item.clib.invar_blend", "Invar Blend");
+        add("item.clib.invar_nugget", "Invar Nugget");
         add("item.clib.electrum_ingot", "Electrum Ingot");
         add("item.clib.electrum_blend", "Electrum Blend");
         add("item.clib.electrum_nugget", "Electrum Nugget");
@@ -41,6 +44,20 @@ public class LanguagesDataGen extends LanguageProvider
         add("item.clib.sulfur_dust", "Sulfur Dust");
         add("item.clib.platinum_ingot", "Platinum Ingot");
         add("item.clib.platinum_nugget", "Platinum Nugget");
+        add("item.clib.enderium_blend", "Enderium Blend");
+        add("item.clib.enderium_ingot", "Enderium Ingot");
+        add("item.clib.enderium_nugget", "Enderium Nugget");
+        add("item.clib.signalum_blend", "Signalum Blend");
+        add("item.clib.signalum_ingot", "Signalum Ingot");
+        add("item.clib.signalum_nugget", "Signalum Nugget");
+        add("item.clib.tungsten_ingot", "Tungsten Ingot");
+        add("item.clib.tungsten_nugget", "Tungsten Nugget");
+        add("item.clib.bronze_blend", "Bronze Blend");
+        add("item.clib.bronze_ingot", "Bronze Ingot");
+        add("item.clib.bronze_nugget", "Bronze Nugget");
+        add("item.clib.amethyst", "Amethyst");
+        add("item.clib.sapphire", "Sapphire");
+
         
         add("block.clib.tin_ore", "Tin Ore");
         add("block.clib.tin_block", "Block of Tin");
@@ -63,8 +80,18 @@ public class LanguagesDataGen extends LanguageProvider
     	add("block.clib.sulfur_ore", "Sulfur Ore");
     	add("block.clib.platinum_ore", "Platinum Ore");
     	add("block.clib.platinum_block", "Block of Platinum");
+    	add("block.clib.enderium_block", "Block of Enderium");
+    	add("block.clib.signalum_block", "Block of Signalum");
+    	add("block.clib.tungsten_ore", "Tungsten Ore");
+    	add("block.clib.tungsten_block", "Block of Tungsten");
+    	add("block.clib.bronze_block", "Block of Bronze");
+    	add("block.clib.amethyst_ore", "Amethyst Ore");
+    	add("block.clib.amethyst_block", "Block of Amethyst");
+    	add("block.clib.sapphire_ore", "Sapphire Ore");
+    	add("block.clib.sapphire_block", "Block of Sapphire");
+
         
-        add("itemGroup.clibtab", "Congueror's Ores");
+        add("itemGroup.clibtab", "Conguerors Ores");
     }
     
     @Override

@@ -9,11 +9,11 @@
     "E": {
       "item": "minecraft:ender_pearl"
     },
+	"P": {
+		"tag": "forge:dusts/pyrotheum"
+	},
 	"B": {
 		"tag": "forge:blends/enderium"
-	},
-	"P": {
-		"tag": "forge:dust/pyrotheum"
 	}
   },
   "result": {

@@ -1,22 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "TT ",
-    "PS ",
+    " I ",
+    "C  ",
     "   "
   ],
   "key": {
-    "T": {
-      "tag": "forge:ingots/tin"
+    "I": {
+      "tag": "forge:ingots/gold"
     },
-	"P": {
-		"tag": "forge:ingots/platinum"
-	},
-	"S": {
+	"C": {
 		"tag": "forge:ingots/silver"
 	}
   },
   "result": {
-    "item": "clib:enderium_blend"
+    "item": "clib:electrum_blend"
   }
 }

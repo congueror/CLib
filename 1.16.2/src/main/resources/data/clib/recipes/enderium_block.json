@@ -7,10 +7,10 @@
   ],
   "key": {
     "I": {
-      "item": "clib:electrum_ingot"
+      "item": "clib:enderium_ingot"
     }
   },
   "result": {
-    "item": "clib:electrum_block"
+    "item": "clib:enderium_block"
   }
 }

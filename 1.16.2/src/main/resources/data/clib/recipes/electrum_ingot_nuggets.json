@@ -7,10 +7,10 @@
   ],
   "key": {
     "I": {
-      "item": "clib:enderium_nugget"
+      "item": "clib:electrum_nugget"
     }
   },
   "result": {
-    "item": "clib:enderium_ingot"
+    "item": "clib:electrum_ingot"
   }
 }

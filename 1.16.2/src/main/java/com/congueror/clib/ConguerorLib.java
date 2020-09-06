@@ -13,6 +13,7 @@ import net.minecraft.item.BlockItem;
 import com.congueror.clib.util.ClibItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.common.MinecraftForge;

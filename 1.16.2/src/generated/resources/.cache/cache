@@ -1,3 +1,5 @@
-ea02f31715fe9331a6f896c834ab764ed88740e5 assets/clib/lang/clib.json
-6d342e428173d7277c3c0c03b6b81cf0952bdf9f data/clib/advancements/recipes/clibtab/aluminum_block.json
-842fe6d310aa3d0d1b98a83331217f4a9f129e4e data/clib/recipes/aluminum_block.json
+6df714c0d73f8620bc8200ec950d2abdc4ce198e assets/clib/lang/clib.json
+6a069a587be76d756d270d1f28fa7c2028f29499 data/clib/advancements/recipes/clibtab/aluminum_block.json
+2427b56f640cc1ecf95bfcccd89ac910149748eb data/clib/advancements/recipes/clibtab/aluminum_ingot.json
+917ea8a9109ccaeeeb7eff280ed2766655dfdb50 data/clib/recipes/aluminum_block.json
+f08ff874ab500a39ac98e964a5b42b6974fdb12a data/clib/recipes/aluminum_ingot.json
