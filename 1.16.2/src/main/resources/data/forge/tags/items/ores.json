@@ -12,6 +12,15 @@
     "#forge:ores/platinum",
     "#forge:ores/tungsten",
     "#forge:ores/amethyst",
-    "#forge:ores/sapphire"
+    "#forge:ores/sapphire",
+    "#forge:blends/steel",
+    "#forge:blends/lumium",
+    "#forge:blends/invar",
+    "#forge:blends/electrum",
+    "#forge:blends/enderium",
+    "#forge:blends/signalum",
+    "#forge:blends/bronze",
+    "#forge:ores/opal",
+    "#forge:ores/titanium"
   ]
 } 

@@ -71,9 +71,15 @@ public class ItemInit
     
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
-    public static final RegistryObject<Item> BRONZEBLEND = ITEMS.register("bronze_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> BRONZE_BLEND = ITEMS.register("bronze_blend", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     
     public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> OPAL = ITEMS.register("opal", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> TITANIUM_SCRAP = ITEMS.register("titanium_scrap", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
 }

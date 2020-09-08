@@ -23,9 +23,10 @@ public class ModOreBlock extends OreBlock
 			return MathHelper.nextInt(random, 1, 3);
 		}else if(this == BlockInit.AMETHYST_ORE.get()) {
 			return MathHelper.nextInt(random, 2, 7);
+		}else if(this == BlockInit.OPAL_ORE.get()) {
+			return MathHelper.nextInt(random, 4, 12);
 		}else {
 			return this == BlockInit.SAPPHIRE_ORE.get() ? MathHelper.nextInt(random, 1, 6) : 0;
 		}
 	}
-	
 }

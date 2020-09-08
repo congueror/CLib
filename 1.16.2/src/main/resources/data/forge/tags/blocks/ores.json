@@ -12,6 +12,8 @@
     "#forge:ores/platinum",
     "#forge:ores/tungsten",
     "#forge:ores/amethyst",
-    "#forge:ores/sapphire"
+    "#forge:ores/sapphire",
+    "#forge:ores/opal",
+    "#forge:ores/titanium"
   ]
 } 

@@ -1,0 +1,9 @@
+{
+  "type": "blasting",
+  "ingredient": {
+    "item": "clib:opal_ore"
+  },
+  "result": "clib:opal",
+  "experience": 3.4,
+  "cookingtime": 400
+}

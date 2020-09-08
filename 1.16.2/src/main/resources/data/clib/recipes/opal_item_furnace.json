@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "clib:opal_ore"
+  },
+  "result": "clib:opal",
+  "experience": 3.2,
+  "cookingtime": 200
+}

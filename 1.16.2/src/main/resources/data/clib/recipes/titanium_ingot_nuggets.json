@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "clib:titanium_nugget"
+    }
+  },
+  "result": {
+    "item": "clib:titanium_ingot"
+  }
+}

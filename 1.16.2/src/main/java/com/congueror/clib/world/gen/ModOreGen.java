@@ -34,7 +34,9 @@ public class ModOreGen
 	public static ConfiguredFeature<?, ?> ORE_RUBY;
 	public static ConfiguredFeature<?, ?> ORE_AMETHYST;
 	public static ConfiguredFeature<?, ?> ORE_SAPPHIRE;
-	
+	public static ConfiguredFeature<?, ?> ORE_OPAL;
+	public static ConfiguredFeature<?, ?> ORE_TITANIUM;
+
 	@SuppressWarnings("deprecation")
 	public static void addFeatures() {
 		ModOreGen.ORE_TIN = configuredFeature("ore_tin", Feature.ORE.withConfiguration(new OreFeatureConfig
@@ -72,6 +74,12 @@ public class ModOreGen
 		
 		ModOreGen.ORE_SAPPHIRE = configuredFeature("ore_sapphire", Feature.ORE.withConfiguration(new OreFeatureConfig
 				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.SAPPHIRE_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_OPAL = configuredFeature("ore_opal", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.OPAL_ORE.get().getDefaultState(), 8)).func_242733_d(9).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_TITANIUM = configuredFeature("ore_titanium", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(7).func_242728_a().func_242731_b(1));
 	
         for (final Biome biome : WorldGenRegistries.field_243657_i) {
             if (biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
@@ -85,6 +93,8 @@ public class ModOreGen
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TUNGSTEN);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_AMETHYST);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_SAPPHIRE);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_OPAL);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TITANIUM);
             }
             if (biome.getCategory() == Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_RUBY);

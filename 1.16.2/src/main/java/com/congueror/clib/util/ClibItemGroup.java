@@ -14,7 +14,6 @@ public class ClibItemGroup extends ItemGroup
 	{
 		super(index, label);
 		this.setBackgroundImageName("clib_item_search.png");
-		this.setNoTitle();
 	}
 	
 	@Override
