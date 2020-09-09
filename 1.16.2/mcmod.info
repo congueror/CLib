@@ -2,7 +2,7 @@
   "modid": "clib",
   "name": "Conguerors Lib",
   "description": "Adds a bunch o' ores",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "mcversion": "1.16.2",
   "url": "https://www.curseforge.com/minecraft/mc-mods/clib",
   "updateUrl": "https://raw.githubusercontent.com/congueror/CLib/master/update.json",

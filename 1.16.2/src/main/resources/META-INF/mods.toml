@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/congueror/CLib/issues" #optional
 
 modId="clib" #mandatory
 
-version="1.2.0" #mandatory
+version="1.2.1" #mandatory
 
 displayName="Conguerors Library" #mandatory
 
