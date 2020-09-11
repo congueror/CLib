@@ -1,33 +1,31 @@
 package com.congueror.clib;
 
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.congueror.clib.init.BlockInit;
+import com.congueror.clib.init.ContainerTypes;
+import com.congueror.clib.init.ItemInit;
+import com.congueror.clib.init.TileEntityTypes;
+import com.congueror.clib.util.ClibItemGroup;
+import com.congueror.clib.world.gen.ModOreGen;
+
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import com.congueror.clib.world.gen.ModOreGen;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraft.item.BlockItem;
-import com.congueror.clib.util.ClibItemGroup;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.common.MinecraftForge;
-import com.congueror.clib.init.ContainerTypes;
-import com.congueror.clib.init.TileEntityTypes;
-import com.congueror.clib.init.BlockInit;
-import com.congueror.clib.init.ItemInit;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.ModLoadingContext;
-import org.apache.logging.log4j.Logger;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.IForgeRegistry;
 
-@SuppressWarnings("unused")
 @Mod("clib")
 @Mod.EventBusSubscriber(modid = "clib", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ConguerorLib

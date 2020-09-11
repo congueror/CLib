@@ -14,18 +14,21 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 
-version = '1.16.2-1.2.1'
+version = '1.16.2-1.2.2'
 group = 'com.congueror.clib'
 archivesBaseName = 'clib'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+
+sourceSets {
+    main.resources.srcDirs += 'src/main/generated_resources'
+}
 
 repositories {
     maven {
         url 'https://www.dogforce-games.com/maven/'
     }
 }
-
 
 minecraft {
     // The mappings can be changed at any time, and must be in the following format.
@@ -83,7 +86,7 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'clib', '--all', '--output', file('src/generated/resources/'), '--existing', sourceSets.main.resources.srcDirs[0]
+            args '--mod', 'carmoury', '--all', '--output', file('src/main/generated_resources/'), '--existing', file('src/main/resources')
 
             mods {
                 clib {
@@ -114,9 +117,9 @@ dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.16.2-33.0.57'
+    minecraft 'net.minecraftforge:forge:1.16.2-33.0.60'
     
-    implementation fg.deobf("something.congueror:worldedit:0.2")
+    implementation fg.deobf("com.congueror:worldedit:0.2")
     
     // compile against the JEI API but do not include it at runtime
     compileOnly fg.deobf("mezz.jei:jei-1.16.2:7.3.0.22:api")

@@ -1,10 +1,11 @@
 {
   "homepage": "https://github.com/congueror/CLib",
   "promos": {
-    "1.16.2-latest": "1.2.1",
-    "1.16.2-recommended": "1.2.1"
+    "1.16.2-latest": "1.2.2",
+    "1.16.2-recommended": "1.2.2"
   },
   "1.16.2": {
+	"1.2.2": "Update forge",
 	"1.2.1": "Bug fix",
 	"1.2.0": "Added ores, tweaks, corrections, bug fixes",
 	"1.1.0": "Added ores, tweaks and fixes",
