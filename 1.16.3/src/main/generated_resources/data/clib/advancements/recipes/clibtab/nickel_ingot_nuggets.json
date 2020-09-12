@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:nickel_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "nickel_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:nickel_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:nickel_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nickel_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

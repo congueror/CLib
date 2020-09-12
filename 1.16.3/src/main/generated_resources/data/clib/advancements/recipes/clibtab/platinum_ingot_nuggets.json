@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:platinum_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "platinum_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:platinum_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:platinum_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "platinum_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/aluminum",
+    "#forge:ores/copper",
+    "#forge:ores/lead",
+    "#forge:ores/tin",
+    "#forge:ores/ruby",
+    "#forge:ores/silver",
+    "#forge:ores/nickel",
+    "#forge:ores/sulfur",
+    "#forge:ores/platinum",
+    "#forge:ores/tungsten",
+    "#forge:ores/amethyst",
+    "#forge:ores/sapphire",
+    "#forge:blends/steel",
+    "#forge:blends/lumium",
+    "#forge:blends/invar",
+    "#forge:blends/electrum",
+    "#forge:blends/enderium",
+    "#forge:blends/signalum",
+    "#forge:blends/bronze",
+    "#forge:ores/opal",
+    "#forge:ores/titanium"
+  ]
+} 

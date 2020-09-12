@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:amethyst_gem_block"
+    ]
+  },
+  "criteria": {
+    "amethyst_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:amethyst_block"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:amethyst_gem_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_block",
+      "has_the_recipe"
+    ]
+  ]
+}

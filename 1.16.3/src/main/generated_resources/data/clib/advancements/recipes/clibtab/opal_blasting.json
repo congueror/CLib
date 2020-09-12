@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:opal_blasting"
+    ]
+  },
+  "criteria": {
+    "opal_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:opal_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:opal_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "opal_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "clib:lumium_blend"
+  },
+  "result": "clib:lumium_ingot",
+  "experience": 1.7,
+  "cookingtime": 400
+}

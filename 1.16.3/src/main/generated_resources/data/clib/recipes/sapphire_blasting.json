@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "clib:sapphire_ore"
+  },
+  "result": "clib:sapphire",
+  "experience": 0.7,
+  "cookingtime": 400
+}

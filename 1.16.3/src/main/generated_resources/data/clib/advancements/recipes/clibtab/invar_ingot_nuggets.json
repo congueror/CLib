@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:invar_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "invar_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:invar_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:invar_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "invar_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

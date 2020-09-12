@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:invar_block"
+    ]
+  },
+  "criteria": {
+    "invar_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:invar_ingot"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:invar_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "invar_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

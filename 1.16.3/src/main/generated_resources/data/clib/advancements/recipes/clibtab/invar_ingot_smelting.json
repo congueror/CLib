@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:invar_ingot_smelting"
+    ]
+  },
+  "criteria": {
+    "invar_blend": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:invar_blend"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:invar_ingot_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "invar_blend",
+      "has_the_recipe"
+    ]
+  ]
+}

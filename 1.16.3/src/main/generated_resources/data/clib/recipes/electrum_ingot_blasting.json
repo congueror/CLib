@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "clib:electrum_blend"
+  },
+  "result": "clib:electrum_ingot",
+  "experience": 1.7,
+  "cookingtime": 400
+}

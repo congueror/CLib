@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ni ",
+    "i  ",
+    "   "
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:ingots/iron"
+    },
+    "n": {
+      "tag": "forge:ingots/nickel"
+    }
+  },
+  "result": {
+    "item": "clib:invar_blend"
+  }
+}

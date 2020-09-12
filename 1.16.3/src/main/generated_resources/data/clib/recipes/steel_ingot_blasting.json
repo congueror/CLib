@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "clib:steel_blend"
+  },
+  "result": "clib:steel_ingot",
+  "experience": 1.7,
+  "cookingtime": 400
+}

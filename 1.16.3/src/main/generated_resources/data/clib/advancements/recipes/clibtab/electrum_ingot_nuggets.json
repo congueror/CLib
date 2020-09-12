@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:electrum_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "electrum_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:electrum_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:electrum_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "electrum_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

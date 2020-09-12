@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:platinum_ingot_smelting"
+    ]
+  },
+  "criteria": {
+    "platinum_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:platinum_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:platinum_ingot_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "platinum_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

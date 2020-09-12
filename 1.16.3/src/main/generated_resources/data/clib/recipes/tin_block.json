@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "clib:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "clib:tin_block"
+  }
+}

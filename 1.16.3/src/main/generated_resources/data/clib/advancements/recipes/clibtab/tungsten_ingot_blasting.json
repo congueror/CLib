@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:tungsten_ingot_blasting"
+    ]
+  },
+  "criteria": {
+    "tungsten_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:tungsten_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:tungsten_ingot_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tungsten_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

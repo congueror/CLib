@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ct ",
+    "t  ",
+    "   "
+  ],
+  "key": {
+    "t": {
+      "tag": "forge:ingots/tin"
+    },
+    "c": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "clib:bronze_blend"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:sapphire_smelting"
+    ]
+  },
+  "criteria": {
+    "sapphire_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:sapphire_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:sapphire_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sapphire_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

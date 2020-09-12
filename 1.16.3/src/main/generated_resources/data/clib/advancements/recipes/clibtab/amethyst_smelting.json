@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:amethyst_smelting"
+    ]
+  },
+  "criteria": {
+    "amethyst_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:amethyst_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:amethyst_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:silver_ingot_block"
+    ]
+  },
+  "criteria": {
+    "silver_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:silver_block"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:silver_ingot_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "silver_block",
+      "has_the_recipe"
+    ]
+  ]
+}

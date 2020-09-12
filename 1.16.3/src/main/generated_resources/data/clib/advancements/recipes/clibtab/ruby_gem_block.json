@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:ruby_gem_block"
+    ]
+  },
+  "criteria": {
+    "ruby_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:ruby_block"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:ruby_gem_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ruby_block",
+      "has_the_recipe"
+    ]
+  ]
+}

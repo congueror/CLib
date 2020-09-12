@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:tungsten_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "tungsten_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:tungsten_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:tungsten_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tungsten_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

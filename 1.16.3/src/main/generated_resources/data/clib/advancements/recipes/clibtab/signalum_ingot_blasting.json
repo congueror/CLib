@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:signalum_ingot_blasting"
+    ]
+  },
+  "criteria": {
+    "signalum_blend": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:signalum_blend"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:signalum_ingot_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "signalum_blend",
+      "has_the_recipe"
+    ]
+  ]
+}

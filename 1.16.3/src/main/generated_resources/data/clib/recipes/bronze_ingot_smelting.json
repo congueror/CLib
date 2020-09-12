@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:bronze_blend"
+  },
+  "result": "clib:bronze_ingot",
+  "experience": 1.7,
+  "cookingtime": 500
+}

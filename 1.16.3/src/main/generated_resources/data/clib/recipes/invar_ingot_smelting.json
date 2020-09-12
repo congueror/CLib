@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:invar_blend"
+  },
+  "result": "clib:invar_ingot",
+  "experience": 1.7,
+  "cookingtime": 500
+}

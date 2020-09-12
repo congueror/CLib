@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:amethyst_block"
+    }
+  ],
+  "result": {
+    "item": "clib:amethyst",
+    "count": 9
+  }
+}

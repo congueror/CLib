@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "clib:block/copper_ore" }
+		}
+}

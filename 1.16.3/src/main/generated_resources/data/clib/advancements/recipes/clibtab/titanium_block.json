@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:titanium_block"
+    ]
+  },
+  "criteria": {
+    "titanium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:titanium_ingot"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:titanium_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "titanium_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

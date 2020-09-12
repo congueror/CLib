@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:bronze_ingot_smelting"
+    ]
+  },
+  "criteria": {
+    "bronze_blend": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:bronze_blend"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:bronze_ingot_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bronze_blend",
+      "has_the_recipe"
+    ]
+  ]
+}

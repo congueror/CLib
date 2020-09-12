@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:electrum_ingot_blasting"
+    ]
+  },
+  "criteria": {
+    "electrum_blend": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:electrum_blend"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:electrum_ingot_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "electrum_blend",
+      "has_the_recipe"
+    ]
+  ]
+}

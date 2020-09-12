@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "clib:enderium_blend"
+  },
+  "result": "clib:enderium_ingot",
+  "experience": 1.7,
+  "cookingtime": 400
+}
