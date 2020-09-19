@@ -8,8 +8,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class ItemModelDataGen extends ItemModelProvider 
-{
+public class ItemModelDataGen extends ItemModelProvider{
 
 	public ItemModelDataGen(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
 		super(generator, CLib.MOD_ID, existingFileHelper);
@@ -17,7 +16,6 @@ public class ItemModelDataGen extends ItemModelProvider
 
 	@Override
 	protected void registerModels() {
-		//Aluminum
 		singleTexture(ItemInit.ALUMINUM_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
                 "layer0", new ResourceLocation(CLib.MOD_ID, "items/aluminum_ingot"));
 		singleTexture(ItemInit.ALUMINUM_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
@@ -175,4 +173,5 @@ public class ItemModelDataGen extends ItemModelProvider
 				singleTexture(ItemInit.ZINC_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
 		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/zinc_nugget"));
 	}
+
 }

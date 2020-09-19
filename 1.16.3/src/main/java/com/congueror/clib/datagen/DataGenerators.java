@@ -28,8 +28,8 @@ public class DataGenerators
         if (event.includeClient()) 
         {
         	CLib.LOGGER.debug("Starting Client Data Generators");
-        	//generator.addProvider(new BlockStatesDataGen(generator, event.getExistingFileHelper()));
-            generator.addProvider(new ItemModelDataGen(generator, CLib.MOD_ID, event.getExistingFileHelper()));
+        	generator.addProvider(new ItemModelDataGen(generator, CLib.MOD_ID, event.getExistingFileHelper()));
+            generator.addProvider(new BlockModelDataGen(generator, CLib.MOD_ID, event.getExistingFileHelper()));
         }
     }
 }
