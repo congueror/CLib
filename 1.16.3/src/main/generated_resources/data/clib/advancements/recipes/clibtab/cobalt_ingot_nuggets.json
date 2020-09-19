@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:cobalt_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "cobalt_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:cobalt_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:cobalt_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cobalt_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

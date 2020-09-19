@@ -26,7 +26,8 @@ public class RecipeDataGen extends RecipeProvider
 	}
 	
 	@Override
-	protected void registerRecipes(Consumer<IFinishedRecipe> recipe) {
+	protected void registerRecipes(Consumer<IFinishedRecipe> recipe) 
+	{
 		//Aluminum
 		//block
 		ShapedRecipeBuilder.shapedRecipe(BlockInit.ALUMINUM_BLOCK.get(), 1)
@@ -101,7 +102,7 @@ public class RecipeDataGen extends RecipeProvider
 		
 		//Bronze
 		//blend
-		ShapedRecipeBuilder.shapedRecipe(ItemInit.BRONZE_BLEND.get(), 1)
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.BRONZE_BLEND.get(), 2)
 		.patternLine("ct ")
 		.patternLine("t  ")
 		.patternLine("   ")
@@ -215,7 +216,7 @@ public class RecipeDataGen extends RecipeProvider
 		
 		//Electrum
 		//blend
-		ShapedRecipeBuilder.shapedRecipe(ItemInit.ELECTRUM_BLEND.get(), 1)
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.ELECTRUM_BLEND.get(), 2)
 		.patternLine(" g ")
 		.patternLine("s  ")
 		.patternLine("   ")
@@ -322,7 +323,7 @@ public class RecipeDataGen extends RecipeProvider
 		
 		//Invar
 		//blend
-		ShapedRecipeBuilder.shapedRecipe(ItemInit.INVAR_BLEND.get(), 1)
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.INVAR_BLEND.get(), 2)
 		.patternLine("ni ")
 		.patternLine("i  ")
 		.patternLine("   ")
@@ -418,7 +419,7 @@ public class RecipeDataGen extends RecipeProvider
 		
 		//Lumium
 		//blend
-		ShapedRecipeBuilder.shapedRecipe(ItemInit.LUMIUM_BLEND.get(), 1)
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.LUMIUM_BLEND.get(), 2)
 		.patternLine("st ")
 		.patternLine("g  ")
 		.patternLine("   ")
@@ -655,7 +656,7 @@ public class RecipeDataGen extends RecipeProvider
 		
 		//Signalum
 		//blend
-		ShapedRecipeBuilder.shapedRecipe(ItemInit.SIGNALUM_BLEND.get(), 1)
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.SIGNALUM_BLEND.get(), 2)
 		.patternLine("csc")
 		.patternLine("rcr")
 		.patternLine("rrr")
@@ -752,7 +753,7 @@ public class RecipeDataGen extends RecipeProvider
 		
 		//Steel
 		//blend
-		ShapedRecipeBuilder.shapedRecipe(ItemInit.STEEL_BLEND.get(), 1)
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.STEEL_BLEND.get(), 2)
 		.patternLine("ci ")
 		.patternLine("i  ")
 		.patternLine("   ")
@@ -951,5 +952,124 @@ public class RecipeDataGen extends RecipeProvider
 		CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.TUNGSTEN_ORE.get()), ItemInit.TUNGSTEN_INGOT.get(), 0.7f, 200)
 		.addCriterion("tungsten_ore", hasItem(BlockInit.TUNGSTEN_ORE.get()))
 		.build(recipe, new ResourceLocation(CLib.MOD_ID, "tungsten_ingot_smelting"));
+		
+		
+		
+		//Uranium
+		//block
+		ShapedRecipeBuilder.shapedRecipe(BlockInit.URANIUM_BLOCK.get(), 1)
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.key('a', ItemInit.URANIUM_INGOT.get())
+		.addCriterion("uranium_ingot", hasItem(ItemInit.URANIUM_INGOT.get()))
+		.build(recipe);
+		
+		//ingot_block
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.URANIUM_INGOT.get(), 9)
+		.addIngredient(BlockInit.URANIUM_BLOCK.get())
+		.addCriterion("uranium_block", hasItem(BlockInit.URANIUM_BLOCK.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "uranium_ingot_block"));
+		
+		//nugget
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.URANIUM_NUGGET.get(), 9)
+		.addIngredient(ItemInit.AMETHYST.get())
+		.addCriterion("uranium_ingot", hasItem(ItemInit.URANIUM_INGOT.get()))
+		.build(recipe);
+		
+		//ingot_nuggets
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.URANIUM_INGOT.get(), 1)
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.key('a', ItemInit.URANIUM_NUGGET.get())
+		.addCriterion("uranium_nugget", hasItem(ItemInit.URANIUM_NUGGET.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "uranium_ingot_nuggets"));
+		
+		//ingot_blasting
+		CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockInit.URANIUM_ORE.get()), ItemInit.URANIUM_INGOT.get(), 0.7f, 400)
+		.addCriterion("uranium_ore", hasItem(BlockInit.URANIUM_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "uranium_ingot_blasting"));
+		
+		//ingot_smelting
+		CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.URANIUM_ORE.get()), ItemInit.URANIUM_INGOT.get(), 0.7f, 200)
+		.addCriterion("uranium_ore", hasItem(BlockInit.URANIUM_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "uranium_ingot_smelting"));
+		
+		
+		
+		//Cobalt
+		//block
+		ShapedRecipeBuilder.shapedRecipe(BlockInit.COBALT_BLOCK.get(), 1)
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.key('a', ItemInit.COBALT_INGOT.get())
+		.addCriterion("cobalt_ingot", hasItem(ItemInit.COBALT_INGOT.get()))
+		.build(recipe);		
+		//ingot_block
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.COBALT_INGOT.get(), 9)
+		.addIngredient(BlockInit.COBALT_BLOCK.get())
+		.addCriterion("cobalt_block", hasItem(BlockInit.COBALT_BLOCK.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "cobalt_ingot_block"));
+		//nugget
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.COBALT_NUGGET.get(), 9)
+		.addIngredient(ItemInit.AMETHYST.get())
+		.addCriterion("cobalt_ingot", hasItem(ItemInit.COBALT_INGOT.get()))
+		.build(recipe);
+		//ingot_nuggets
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.COBALT_INGOT.get(), 1)
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.key('a', ItemInit.COBALT_NUGGET.get())
+		.addCriterion("cobalt_nugget", hasItem(ItemInit.COBALT_NUGGET.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "cobalt_ingot_nuggets"));
+		//ingot_blasting
+		CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockInit.COBALT_ORE.get()), ItemInit.COBALT_INGOT.get(), 0.7f, 400)
+		.addCriterion("cobalt_ore", hasItem(BlockInit.COBALT_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "cobalt_ingot_blasting"));	
+		//ingot_smelting
+		CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.COBALT_ORE.get()), ItemInit.COBALT_INGOT.get(), 0.7f, 200)
+		.addCriterion("cobalt_ore", hasItem(BlockInit.COBALT_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "cobalt_ingot_smelting"));
+		
+		
+		
+		//Zinc
+		//block
+		ShapedRecipeBuilder.shapedRecipe(BlockInit.ZINC_BLOCK.get(), 1)
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.key('a', ItemInit.ZINC_INGOT.get())
+		.addCriterion("zinc_ingot", hasItem(ItemInit.ZINC_INGOT.get()))
+		.build(recipe);		
+		//ingot_block
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.ZINC_INGOT.get(), 9)
+		.addIngredient(BlockInit.ZINC_BLOCK.get())
+		.addCriterion("zinc_block", hasItem(BlockInit.ZINC_BLOCK.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "zinc_ingot_block"));
+		//nugget
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.ZINC_NUGGET.get(), 9)
+		.addIngredient(ItemInit.AMETHYST.get())
+		.addCriterion("zinc_ingot", hasItem(ItemInit.ZINC_INGOT.get()))
+		.build(recipe);
+		//ingot_nuggets
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.ZINC_INGOT.get(), 1)
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.patternLine("aaa")
+		.key('a', ItemInit.ZINC_NUGGET.get())
+		.addCriterion("zinc_nugget", hasItem(ItemInit.ZINC_NUGGET.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "zinc_ingot_nuggets"));
+		//ingot_blasting
+		CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockInit.ZINC_ORE.get()), ItemInit.ZINC_INGOT.get(), 0.7f, 400)
+		.addCriterion("zinc_ore", hasItem(BlockInit.ZINC_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "zinc_ingot_blasting"));	
+		//ingot_smelting
+		CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.ZINC_ORE.get()), ItemInit.ZINC_INGOT.get(), 0.7f, 200)
+		.addCriterion("zinc_ore", hasItem(BlockInit.ZINC_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "zinc_ingot_smelting"));
 	}
 }

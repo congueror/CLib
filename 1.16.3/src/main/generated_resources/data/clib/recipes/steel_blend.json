@@ -14,6 +14,7 @@
     }
   },
   "result": {
-    "item": "clib:steel_blend"
+    "item": "clib:steel_blend",
+    "count": 2
   }
 }

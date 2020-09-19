@@ -17,6 +17,7 @@
     }
   },
   "result": {
-    "item": "clib:lumium_blend"
+    "item": "clib:lumium_blend",
+    "count": 2
   }
 }

@@ -1,6 +1,7 @@
 package com.congueror.clib.datagen;
 
 import com.congueror.clib.CLib;
+import com.congueror.clib.datagen.TagsDataGen.ItemTagsDataGen;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,17 +19,17 @@ public class DataGenerators
         
         if (event.includeServer()) 
         {
+        	TagsDataGen.BlockTagsDataGen blockTagsProvider = new TagsDataGen.BlockTagsDataGen(event.getGenerator(), event.getExistingFileHelper());
         	generator.addProvider(new RecipeDataGen(generator));
             //generator.addProvider(new LootTablesDataGen(generator));
-            //generator.addProvider(new BlockTagsDataGen(generator));
-            //generator.addProvider(new ItemTagsDataGen(generator));
+            generator.addProvider(new TagsDataGen.BlockTagsDataGen(generator, event.getExistingFileHelper()));
+            generator.addProvider(new ItemTagsDataGen(generator, blockTagsProvider, event.getExistingFileHelper()));
         }
         if (event.includeClient()) 
         {
         	CLib.LOGGER.debug("Starting Client Data Generators");
-        	//generator.addProvider(new BlockModelsDataGen(generator, CLib.MOD_ID, event.getExistingFileHelper()));
+        	//generator.addProvider(new BlockStatesDataGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new ItemModelDataGen(generator, CLib.MOD_ID, event.getExistingFileHelper()));
-            //generator.addProvider(new LanguagesDataGen(generator, ConguerorLib.MOD_ID));
         }
     }
 }

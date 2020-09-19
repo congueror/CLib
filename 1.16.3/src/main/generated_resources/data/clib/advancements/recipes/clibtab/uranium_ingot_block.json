@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:uranium_ingot_block"
+    ]
+  },
+  "criteria": {
+    "uranium_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:uranium_block"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:uranium_ingot_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "uranium_block",
+      "has_the_recipe"
+    ]
+  ]
+}

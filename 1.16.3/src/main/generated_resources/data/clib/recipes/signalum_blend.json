@@ -17,6 +17,7 @@
     }
   },
   "result": {
-    "item": "clib:signalum_blend"
+    "item": "clib:signalum_blend",
+    "count": 2
   }
 }

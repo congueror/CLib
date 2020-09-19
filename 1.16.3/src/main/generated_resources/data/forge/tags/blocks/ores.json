@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/aluminum",
+    "#forge:ores/amethyst",
+    "#forge:ores/copper",
+    "#forge:ores/lead",
+    "#forge:ores/tin",
+    "#forge:ores/ruby",
+    "#forge:ores/silver",
+    "#forge:ores/nickel",
+    "#forge:ores/sulfur",
+    "#forge:ores/platinum",
+    "#forge:ores/tungsten",
+    "#forge:ores/sapphire",
+    "#forge:ores/opal",
+    "#forge:ores/titanium",
+    "#forge:ores/uranium",
+    "#forge:ores/cobalt",
+    "#forge:ores/zinc"
+  ]
+}

@@ -143,18 +143,36 @@ public class ItemModelDataGen extends ItemModelProvider
 		singleTexture(ItemInit.TIN_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
                 "layer0", new ResourceLocation(CLib.MOD_ID, "items/tin_nugget"));
 		
-		//Titanium
-		singleTexture(ItemInit.TITANIUM_SCRAP.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
-                "layer0", new ResourceLocation(CLib.MOD_ID, "items/titanium_scrap"));
-		singleTexture(ItemInit.TITANIUM_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
-                "layer0", new ResourceLocation(CLib.MOD_ID, "items/titanium_ingot"));
-		singleTexture(ItemInit.TITANIUM_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
-                "layer0", new ResourceLocation(CLib.MOD_ID, "items/titanium_nugget"));
+				//Titanium
+				singleTexture(ItemInit.TITANIUM_SCRAP.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+						"layer0", new ResourceLocation(CLib.MOD_ID, "items/titanium_scrap"));
+				singleTexture(ItemInit.TITANIUM_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+						"layer0", new ResourceLocation(CLib.MOD_ID, "items/titanium_ingot"));
+				singleTexture(ItemInit.TITANIUM_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+						"layer0", new ResourceLocation(CLib.MOD_ID, "items/titanium_nugget"));
 		
-		//Tungsten
-		singleTexture(ItemInit.TUNGSTEN_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
-                "layer0", new ResourceLocation(CLib.MOD_ID, "items/tungsten_ingot"));
-		singleTexture(ItemInit.TUNGSTEN_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
-                "layer0", new ResourceLocation(CLib.MOD_ID, "items/tungsten_nugget"));
+				//Tungsten
+				singleTexture(ItemInit.TUNGSTEN_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+						"layer0", new ResourceLocation(CLib.MOD_ID, "items/tungsten_ingot"));
+				singleTexture(ItemInit.TUNGSTEN_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+						"layer0", new ResourceLocation(CLib.MOD_ID, "items/tungsten_nugget"));
+		
+				//Uranium
+				singleTexture(ItemInit.URANIUM_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/uranium_ingot"));
+				singleTexture(ItemInit.URANIUM_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/uranium_nugget"));
+				
+				//Cobalt
+				singleTexture(ItemInit.COBALT_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/cobalt_ingot"));
+				singleTexture(ItemInit.COBALT_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/cobalt_nugget"));
+				
+				//Zinc
+				singleTexture(ItemInit.ZINC_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/zinc_ingot"));
+				singleTexture(ItemInit.ZINC_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/zinc_nugget"));
 	}
 }

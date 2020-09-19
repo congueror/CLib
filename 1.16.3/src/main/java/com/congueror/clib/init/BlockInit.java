@@ -105,7 +105,20 @@ public class BlockInit
     public static final RegistryObject<Block> TITANIUM_BLOCK = BLOCKS.register("titanium_block", () -> new MetalBlock
     		(Block.Properties.create(Material.IRON).hardnessAndResistance(8f, 15f).sound(SoundType.NETHERITE).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
     
+    public static final RegistryObject<Block> URANIUM_ORE = BLOCKS.register("uranium_ore", () -> new ModOreBlock
+    		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
+    public static final RegistryObject<Block> URANIUM_BLOCK = BLOCKS.register("uranium_block", () -> new MetalBlock
+    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
     
+    public static final RegistryObject<Block> COBALT_ORE = BLOCKS.register("cobalt_ore", () -> new ModOreBlock
+    		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
+    public static final RegistryObject<Block> COBALT_BLOCK = BLOCKS.register("cobalt_block", () -> new MetalBlock
+    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
+    
+    public static final RegistryObject<Block> ZINC_ORE = BLOCKS.register("zinc_ore", () -> new ModOreBlock
+    		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool()));
+    public static final RegistryObject<Block> ZINC_BLOCK = BLOCKS.register("zinc_block", () -> new MetalBlock
+    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool()));
     
     //public static final RegistryObject<Block> ALLOY_SMELTER = BLOCKS.register("alloy_smelter", () -> new AlloySmelterBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(5.5f, 6.5f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool()));
 }

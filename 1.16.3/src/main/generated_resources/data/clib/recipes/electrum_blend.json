@@ -14,6 +14,7 @@
     }
   },
   "result": {
-    "item": "clib:electrum_blend"
+    "item": "clib:electrum_blend",
+    "count": 2
   }
 }

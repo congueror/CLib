@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:zinc_block"
+    }
+  ],
+  "result": {
+    "item": "clib:zinc_ingot",
+    "count": 9
+  }
+}

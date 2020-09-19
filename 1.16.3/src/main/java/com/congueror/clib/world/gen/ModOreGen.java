@@ -36,6 +36,9 @@ public class ModOreGen
 	public static ConfiguredFeature<?, ?> ORE_SAPPHIRE;
 	public static ConfiguredFeature<?, ?> ORE_OPAL;
 	public static ConfiguredFeature<?, ?> ORE_TITANIUM;
+	public static ConfiguredFeature<?, ?> ORE_URANIUM;
+	public static ConfiguredFeature<?, ?> ORE_COBALT;
+	public static ConfiguredFeature<?, ?> ORE_ZINC;
 
 	@SuppressWarnings("deprecation")
 	public static void addFeatures() {
@@ -80,6 +83,15 @@ public class ModOreGen
 		
 		ModOreGen.ORE_TITANIUM = configuredFeature("ore_titanium", Feature.ORE.withConfiguration(new OreFeatureConfig
 				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(7).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_URANIUM = configuredFeature("ore_uranium", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(1));
+		
+		ModOreGen.ORE_COBALT = configuredFeature("ore_cobalt", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(10).func_242728_a().func_242731_b(2));
+		
+		ModOreGen.ORE_ZINC = configuredFeature("ore_zinc", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(40).func_242728_a().func_242731_b(4));
 	
         for (final Biome biome : WorldGenRegistries.field_243657_i) {
             if (biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
@@ -95,10 +107,13 @@ public class ModOreGen
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_AMETHYST);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_SAPPHIRE);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_OPAL);
-                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TITANIUM);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_URANIUM);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_ZINC);
             }
             if (biome.getCategory() == Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_RUBY);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TITANIUM);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_COBALT);
             }
         }
     }

@@ -12,6 +12,7 @@ import com.congueror.clib.world.gen.ModOreGen;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -102,5 +103,10 @@ public class CLib
     
     static {
         LOGGER = LogManager.getLogger();
+    }
+    
+    public static ResourceLocation location(String path)
+    {
+        return new ResourceLocation(MOD_ID, path);
     }
 }

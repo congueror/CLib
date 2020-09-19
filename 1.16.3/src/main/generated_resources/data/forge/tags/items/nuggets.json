@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:nuggets/aluminum",
+    "#forge:nuggets/bronze",
+    "#forge:nuggets/copper",
+    "#forge:nuggets/electrum",
+    "#forge:nuggets/enderium",
+    "#forge:nuggets/invar",
+    "#forge:nuggets/lead",
+    "#forge:nuggets/lumium",
+    "#forge:nuggets/nickel",
+    "#forge:nuggets/platinum",
+    "#forge:nuggets/signalum",
+    "#forge:nuggets/silver",
+    "#forge:nuggets/steel",
+    "#forge:nuggets/tin",
+    "#forge:nuggets/titanium",
+    "#forge:nuggets/tungsten",
+    "#forge:nuggets/coal",
+    "#forge:nuggets/uranium",
+    "#forge:nuggets/cobalt",
+    "#forge:nuggets/zinc"
+  ]
+}

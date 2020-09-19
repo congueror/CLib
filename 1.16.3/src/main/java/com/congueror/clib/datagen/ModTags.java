@@ -45,6 +45,9 @@ public class ModTags
 			public static final IOptionalNamedTag<Item> INGOTS_TIN = tag("ingots/tin");
 			public static final IOptionalNamedTag<Item> INGOTS_TITANIUM = tag("ingots/titanium");
 			public static final IOptionalNamedTag<Item> INGOTS_TUNGSTEN = tag("ingots/tungsten");
+			public static final IOptionalNamedTag<Item> INGOTS_URANIUM = tag("ingots/uranium");
+			public static final IOptionalNamedTag<Item> INGOTS_COBALT = tag("ingots/cobalt");
+			public static final IOptionalNamedTag<Item> INGOTS_ZINC = tag("ingots/zinc");
 		public static final IOptionalNamedTag<Item> NUGGETS = tag("nuggets");
 			public static final IOptionalNamedTag<Item> NUGGETS_ALUMINUM = tag("nuggets/aluminum");
 			public static final IOptionalNamedTag<Item> NUGGETS_BRONZE = tag("nuggets/bronze");
@@ -63,6 +66,9 @@ public class ModTags
 			public static final IOptionalNamedTag<Item> NUGGETS_TITANIUM = tag("nuggets/titanium");
 			public static final IOptionalNamedTag<Item> NUGGETS_TUNGSTEN = tag("nuggets/tungsten");
 			public static final IOptionalNamedTag<Item> NUGGETS_COAL = tag("nuggets/coal");
+			public static final IOptionalNamedTag<Item> NUGGETS_URANIUM = tag("nuggets/uranium");
+			public static final IOptionalNamedTag<Item> NUGGETS_COBALT = tag("nuggets/cobalt");
+			public static final IOptionalNamedTag<Item> NUGGETS_ZINC = tag("nuggets/zinc");
 		public static final IOptionalNamedTag<Item> ORES = tag("ores");
 			public static final IOptionalNamedTag<Item> ORES_ALUMINUM = tag("ores/aluminum");
 			public static final IOptionalNamedTag<Item> ORES_AMETHYST = tag("ores/amethyst");
@@ -85,6 +91,9 @@ public class ModTags
 			public static final IOptionalNamedTag<Item> ORES_TIN = tag("ores/tin");
 			public static final IOptionalNamedTag<Item> ORES_TITANIUM = tag("ores/titanium");
 			public static final IOptionalNamedTag<Item> ORES_TUNGSTEN = tag("ores/tungsten");
+			public static final IOptionalNamedTag<Item> ORES_URANIUM = tag("ores/uranium");
+			public static final IOptionalNamedTag<Item> ORES_COBALT = tag("ores/cobalt");
+			public static final IOptionalNamedTag<Item> ORES_ZINC = tag("ores/zinc");
 		public static final IOptionalNamedTag<Item> STORAGE_BLOCKS = tag("storage_blocks");
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_ALUMINUM = tag("storage_blocks/aluminum");
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_AMETHYST = tag("storage_blocks/amethyst");
@@ -106,6 +115,9 @@ public class ModTags
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_TIN = tag("storage_blocks/tin");
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_TITANIUM = tag("storage_blocks/titanium");
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_TUNGSTEN = tag("storage_blocks/tungsten");
+			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_URANIUM = tag("storage_blocks/uranium");
+			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_COBALT = tag("storage_blocks/cobalt");
+			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_ZINC = tag("storage_blocks/zinc");
 		
 		private static IOptionalNamedTag<Item> tag(String name)
         {
@@ -138,6 +150,9 @@ public class ModTags
 			public static final IOptionalNamedTag<Block> ORES_TIN = tag("ores/tin");
 			public static final IOptionalNamedTag<Block> ORES_TITANIUM = tag("ores/titanium");
 			public static final IOptionalNamedTag<Block> ORES_TUNGSTEN = tag("ores/tungsten");
+			public static final IOptionalNamedTag<Block> ORES_URANIUM = tag("ores/uranium");
+			public static final IOptionalNamedTag<Block> ORES_COBALT = tag("ores/cobalt");
+			public static final IOptionalNamedTag<Block> ORES_ZINC = tag("ores/zinc");
 		public static final IOptionalNamedTag<Block> STORAGE_BLOCKS = tag("storage_blocks");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_ALUMINUM = tag("storage_blocks/aluminum");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_AMETHYST = tag("storage_blocks/amethyst");
@@ -159,6 +174,9 @@ public class ModTags
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_TIN = tag("storage_blocks/tin");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_TITANIUM = tag("storage_blocks/titanium");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_TUNGSTEN = tag("storage_blocks/tungsten");
+			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_URANIUM = tag("storage_blocks/uranium");
+			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_COBALT = tag("storage_blocks/cobalt");
+			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_ZINC = tag("storage_blocks/zinc");
 			
 		private static IOptionalNamedTag<Block> tag(String name)
 	    {

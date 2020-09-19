@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "clib:zinc_nugget"
+    }
+  },
+  "result": {
+    "item": "clib:zinc_ingot"
+  }
+}

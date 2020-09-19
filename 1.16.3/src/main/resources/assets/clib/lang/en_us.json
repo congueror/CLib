@@ -46,6 +46,12 @@
 	"item.clib.titanium_ingot": "Titanium Ingot",
 	"item.clib.titanium_scrap": "Titanium Scrap",
 	"item.clib.titanium_nugget": "Titanium Nugget",
+	"item.clib.uranium_ingot": "Uranium Ingot",
+	"item.clib.uranium_nugget": "Uranium Nugget",
+	"item.clib.cobalt_ingot": "Cobalt Ingot",
+	"item.clib.cobalt_nugget": "Cobalt Nugget",
+	"item.clib.zinc_ingot": "Zinc Ingot",
+	"item.clib.zinc_nugget": "Zinc Nugget",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -81,6 +87,12 @@
 	"block.clib.opal_block": "Block of Opal",
 	"block.clib.titanium_ore": "Recens Debris",
 	"block.clib.titanium_block": "Block of Titanium",
+	"block.clib.uranium_ore": "Uranium Ore",
+	"block.clib.uranium_block": "Block of Uranium",
+	"block.clib.cobalt_ore": "Cobalt Ore",
+	"block.clib.cobalt_block": "Block of Cobalt",
+	"block.clib.zinc_ore": "Zinc Ore",
+	"block.clib.zinc_block": "Block of Zinc",
 	
 	"itemGroup.clibtab": "C's Ores"
 }
