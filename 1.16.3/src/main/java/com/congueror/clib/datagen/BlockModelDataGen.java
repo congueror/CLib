@@ -113,5 +113,8 @@ public class BlockModelDataGen extends BlockStateProvider
 		//Zinc
 		basicBlockItem(BlockInit.ZINC_BLOCK.get());
 		basicBlockItem(BlockInit.ZINC_ORE.get());
+		
+		//Saltpetre
+		basicBlockItem(BlockInit.SALTPETRE_ORE.get());
 	}
 }

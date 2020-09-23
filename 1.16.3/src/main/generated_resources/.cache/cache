@@ -53,6 +53,8 @@ db44a25f75ff393476676e7bda551c1d2c904428 assets/clib/models/item/platinum_ore.js
 0ea3a727d56a9971d1505fcdbc3f202c08f38569 assets/clib/models/item/ruby.json
 da0a4fbabf460064788d4ae222a217aace6830dc assets/clib/models/item/ruby_block.json
 1af350fbf1e20c7471cfd8874391cefd7d01665c assets/clib/models/item/ruby_ore.json
+5acffe5b4836ae00753077344313b70c96c054c7 assets/clib/models/item/saltpetre_dust.json
+ddf5c3ab8eee9f61691f53cd6c0ebb1e02fb2c17 assets/clib/models/item/saltpetre_ore.json
 6adb3b842373d26c06172858a4f89116925134d9 assets/clib/models/item/sapphire.json
 f5a0fe28d78ab8d8dceded8327cec168de974f8a assets/clib/models/item/sapphire_block.json
 3171aabede69ec35217040a7b3fad4876c5bd067 assets/clib/models/item/sapphire_ore.json
@@ -176,6 +178,8 @@ f4a037493247a6bfa143b7d3e95f30a0c7877aa0 data/clib/advancements/recipes/clibtab/
 137d24afd0dc9250a5673f68812c1c5f0e188e32 data/clib/advancements/recipes/clibtab/ruby_block.json
 93745ecee0864e1172ac3856d174e64812cf9d03 data/clib/advancements/recipes/clibtab/ruby_gem_block.json
 a3fc55561af2af9939f0b189110d18d728cab210 data/clib/advancements/recipes/clibtab/ruby_smelting.json
+f08bcb21de3e689842912099e3e7228645e32b7f data/clib/advancements/recipes/clibtab/saltpetre_dust_blasting.json
+a19a00780001fe392af0c6ce025376e8e091e4fe data/clib/advancements/recipes/clibtab/saltpetre_dust_smelting.json
 0b013c89f8e4d3729cf10f719fb48d0fdeea4f9d data/clib/advancements/recipes/clibtab/sapphire_blasting.json
 fdb5a726db89b35e72bf4a9e6f1579eb74f0f321 data/clib/advancements/recipes/clibtab/sapphire_block.json
 43060abde1bfda8054b030bd5cdf5c564797cbfe data/clib/advancements/recipes/clibtab/sapphire_gem_block.json
@@ -320,6 +324,8 @@ b671e2944fcb8d7541f9618bacd568cd9ab41fa1 data/clib/recipes/ruby_blasting.json
 c877f7a668989b81d31610f6a538eb68348fc767 data/clib/recipes/ruby_block.json
 e2b59114755bd89d17e54bb772f62ed2c5ae931f data/clib/recipes/ruby_gem_block.json
 2cf0b8236b896374e4970d7ee161a8967dea97fd data/clib/recipes/ruby_smelting.json
+01e07dd43c8a9a7a69e03ff26ab50fe4f7597c6c data/clib/recipes/saltpetre_dust_blasting.json
+1f058cce917456bd89d00b1c22a4748d29adb3dd data/clib/recipes/saltpetre_dust_smelting.json
 eda95121fde1a57833459d79d7ee313d8374edb6 data/clib/recipes/sapphire_blasting.json
 6aabebc7200af1a765e456bca870d85e75fef023 data/clib/recipes/sapphire_block.json
 4903645c64f6558becc6972418459c31ef3c5434 data/clib/recipes/sapphire_gem_block.json
@@ -377,7 +383,7 @@ b299c7e5f19aedcfa9f7106f7d0dfe5703fc96f4 data/clib/recipes/zinc_ingot_block.json
 34d41260cfb4cfb1c939a94a64450990af9b03e2 data/clib/recipes/zinc_ingot_nuggets.json
 855bbeb6c053c699c8672aaa0f041ef63668dbc4 data/clib/recipes/zinc_ingot_smelting.json
 37e52e1054b474017e651c9ad68b270402935dfb data/clib/recipes/zinc_nugget.json
-9ffc98d9f71bee35b3ee0054883351a969510c13 data/forge/tags/blocks/ores.json
+ded0cf9e6b0baefcf1788d6e27120be6a6cc8cf4 data/forge/tags/blocks/ores.json
 928fdc95ec2263ea6f0602e48b6898b5056eb761 data/forge/tags/blocks/ores/aluminum.json
 5b2136c8c1a2cf46598870ea370413a210040ccf data/forge/tags/blocks/ores/amethyst.json
 2a50cf06c9294090074d4cbce48d97f905b55383 data/forge/tags/blocks/ores/cobalt.json
@@ -387,6 +393,7 @@ f52a4ebba39113710375d09527fed567939ff3f2 data/forge/tags/blocks/ores/nickel.json
 ba2978c29b01ad2f4c7e5917fc1053cb274e544b data/forge/tags/blocks/ores/opal.json
 b1068a19a93687e6e1518099aee30a99416d7a28 data/forge/tags/blocks/ores/platinum.json
 71e6b7e7945058f22fdea5ea8afe38e87c163237 data/forge/tags/blocks/ores/ruby.json
+c6fdb8d0f1f93421f479046afd390dd18262695a data/forge/tags/blocks/ores/saltpetre.json
 0b7b23da19d22bdc4d28d28b7c959e7c7114cbf9 data/forge/tags/blocks/ores/sapphire.json
 c063e238672262c8ce4821cf1414a2b875116524 data/forge/tags/blocks/ores/silver.json
 4827da56b570a7e25db373f0d3fe2522f2bbb534 data/forge/tags/blocks/ores/sulfur.json
@@ -419,9 +426,10 @@ bd673a05157107ad9e86e1ead1c114d8d2d62343 data/forge/tags/blocks/storage_blocks/t
 fa9500cf6943ef9bd4e83f027c310c6f0343432a data/forge/tags/blocks/storage_blocks/tungsten.json
 b35c436817a8d506d1c40a0e1be0d91872a97334 data/forge/tags/blocks/storage_blocks/uranium.json
 da6cf4289cf323cc8bd1686bdae3e9e0141064f5 data/forge/tags/blocks/storage_blocks/zinc.json
-80a7d2705ef2d936ab788fd48eeaf1c353907811 data/forge/tags/items/dusts.json
+7413a08c55e710259cea6de4e15e5f15292386ce data/forge/tags/items/dusts.json
 713d0f95d8eff5e6408b732a7ad645bf929dd207 data/forge/tags/items/dusts/blaze_powder.json
 72a7683526c2588ad43c6fc877f8b904ffc62231 data/forge/tags/items/dusts/pyrotheum.json
+b7797e1f2e9361f43c72f3257f97b3fc562f6b6f data/forge/tags/items/dusts/saltpetre.json
 9052ba522705bbe16193e39c908fbdc54be7b729 data/forge/tags/items/dusts/sulfur.json
 cfdf864af3a748372cb16b9134d776f35bc7404d data/forge/tags/items/gems.json
 d3f805339c7419c584eace4c1467c216b70af951 data/forge/tags/items/gems/amethyst.json
@@ -469,7 +477,7 @@ c7b454afcd325610d666ed4520ecfdadfd86869f data/forge/tags/items/nuggets/lead.json
 dda071560c0dce81245cadca8610c9917e06c77d data/forge/tags/items/nuggets/tungsten.json
 3d21b6681c47ffd3ab696d9e7c7ad1b897749483 data/forge/tags/items/nuggets/uranium.json
 99bf6f166b8293f0cbfd4ef873bd3257b49cd0d9 data/forge/tags/items/nuggets/zinc.json
-9ffc98d9f71bee35b3ee0054883351a969510c13 data/forge/tags/items/ores.json
+ded0cf9e6b0baefcf1788d6e27120be6a6cc8cf4 data/forge/tags/items/ores.json
 928fdc95ec2263ea6f0602e48b6898b5056eb761 data/forge/tags/items/ores/aluminum.json
 5b2136c8c1a2cf46598870ea370413a210040ccf data/forge/tags/items/ores/amethyst.json
 2a50cf06c9294090074d4cbce48d97f905b55383 data/forge/tags/items/ores/cobalt.json
@@ -479,6 +487,7 @@ f52a4ebba39113710375d09527fed567939ff3f2 data/forge/tags/items/ores/nickel.json
 ba2978c29b01ad2f4c7e5917fc1053cb274e544b data/forge/tags/items/ores/opal.json
 b1068a19a93687e6e1518099aee30a99416d7a28 data/forge/tags/items/ores/platinum.json
 71e6b7e7945058f22fdea5ea8afe38e87c163237 data/forge/tags/items/ores/ruby.json
+c6fdb8d0f1f93421f479046afd390dd18262695a data/forge/tags/items/ores/saltpetre.json
 0b7b23da19d22bdc4d28d28b7c959e7c7114cbf9 data/forge/tags/items/ores/sapphire.json
 c063e238672262c8ce4821cf1414a2b875116524 data/forge/tags/items/ores/silver.json
 4827da56b570a7e25db373f0d3fe2522f2bbb534 data/forge/tags/items/ores/sulfur.json
@@ -511,3 +520,5 @@ bd673a05157107ad9e86e1ead1c114d8d2d62343 data/forge/tags/items/storage_blocks/ti
 fa9500cf6943ef9bd4e83f027c310c6f0343432a data/forge/tags/items/storage_blocks/tungsten.json
 b35c436817a8d506d1c40a0e1be0d91872a97334 data/forge/tags/items/storage_blocks/uranium.json
 da6cf4289cf323cc8bd1686bdae3e9e0141064f5 data/forge/tags/items/storage_blocks/zinc.json
+9439c42495c44010a975d6248ec708a189b79228 data/minecraft/advancements/recipes/misc/gunpowder.json
+72c0f8756cb4454183bc30a534f270affe9e513b data/minecraft/recipes/gunpowder.json

@@ -39,6 +39,7 @@ public class ModOreGen
 	public static ConfiguredFeature<?, ?> ORE_URANIUM;
 	public static ConfiguredFeature<?, ?> ORE_COBALT;
 	public static ConfiguredFeature<?, ?> ORE_ZINC;
+	public static ConfiguredFeature<?, ?> ORE_SALTPETRE;
 
 	@SuppressWarnings("deprecation")
 	public static void addFeatures() {
@@ -92,8 +93,11 @@ public class ModOreGen
 		
 		ModOreGen.ORE_ZINC = configuredFeature("ore_zinc", Feature.ORE.withConfiguration(new OreFeatureConfig
 				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(40).func_242728_a().func_242731_b(4));
+		
+		ModOreGen.ORE_SALTPETRE = configuredFeature("ore_saltpetre", Feature.ORE.withConfiguration(new OreFeatureConfig
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(100).func_242728_a().func_242731_b(6));
 	
-        for (final Biome biome : WorldGenRegistries.field_243657_i) {
+        for (final Biome biome : WorldGenRegistries.BIOME) {
             if (biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_TIN);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_ALUMINUM);
@@ -109,6 +113,7 @@ public class ModOreGen
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_OPAL);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_URANIUM);
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_ZINC);
+                addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_SALTPETRE);
             }
             if (biome.getCategory() == Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {
                 addFeatureToBiome(biome, GenerationStage.Decoration.UNDERGROUND_ORES, ModOreGen.ORE_RUBY);
@@ -119,13 +124,13 @@ public class ModOreGen
     }
 
 	public static ConfiguredFeature<?, ?> configuredFeature(final String registryName, final ConfiguredFeature<?, ?> configuredFeature) {
-        Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation("clib", registryName), configuredFeature);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("clib", registryName), configuredFeature);
         return configuredFeature;
     }
     
 	public static void addFeatureToBiome(Biome biome, GenerationStage.Decoration feature, ConfiguredFeature<?, ?> configuredFeature) {
         ConvertImmutableFeatures(biome);
-        List<List<Supplier<ConfiguredFeature<?, ?>>>> biomeFeatures = biome.func_242440_e().field_242484_f;
+        List<List<Supplier<ConfiguredFeature<?, ?>>>> biomeFeatures = biome.getGenerationSettings().features;
         while (biomeFeatures.size() <= feature.ordinal()) {
             biomeFeatures.add(Lists.newArrayList());
         }
@@ -134,8 +139,8 @@ public class ModOreGen
     }
     
     private static void ConvertImmutableFeatures(final Biome biome) {
-        if (biome.func_242440_e().field_242484_f instanceof ImmutableList) {
-            biome.func_242440_e().field_242484_f = biome.func_242440_e().field_242484_f.stream().map(Lists::newArrayList).collect(Collectors.toList());
+        if (biome.getGenerationSettings().features instanceof ImmutableList) {
+            biome.getGenerationSettings().features = biome.getGenerationSettings().features.stream().map(Lists::newArrayList).collect(Collectors.toList());
         }
     }
 }

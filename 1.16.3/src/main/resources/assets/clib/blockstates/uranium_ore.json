@@ -1,5 +1,5 @@
 {
 	"variants": {
-		"": { "model": "clib:block/uranium_block" }
+		"": { "model": "clib:block/uranium_ore" }
 		}
 }

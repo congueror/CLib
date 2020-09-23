@@ -23,10 +23,12 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_PYROTHEUM);
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SULFUR);
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.BLAZE_POWDER);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SALTPETRE);
 			
 			getOrCreateBuilder(ModTags.Items.DUSTS_PYROTHEUM).add(ItemInit.PYROTHEUM_DUST.get());
 			getOrCreateBuilder(ModTags.Items.DUSTS_SULFUR).add(ItemInit.SULFUR_DUST.get());
 			getOrCreateBuilder(ModTags.Items.BLAZE_POWDER).add(Items.BLAZE_POWDER);
+			getOrCreateBuilder(ModTags.Items.DUSTS_SALTPETRE).add(ItemInit.SALTPETRE_DUST.get());
 			
 			getOrCreateBuilder(ModTags.Items.GEMS).addTag(ModTags.Items.GEMS_AMETHYST);
 			getOrCreateBuilder(ModTags.Items.GEMS).addTag(ModTags.Items.GEMS_OPAL);
@@ -137,6 +139,7 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_URANIUM);
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_COBALT);
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_ZINC);
+			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_SALTPETRE);
 
 			getOrCreateBuilder(ModTags.Items.ORES_ALUMINUM).add(BlockInit.ALUMINUM_ORE.get().asItem());
 			getOrCreateBuilder(ModTags.Items.ORES_AMETHYST).add(BlockInit.AMETHYST_ORE.get().asItem());
@@ -155,6 +158,7 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.ORES_URANIUM).add(BlockInit.URANIUM_ORE.get().asItem());
 			getOrCreateBuilder(ModTags.Items.ORES_COBALT).add(BlockInit.COBALT_ORE.get().asItem());
 			getOrCreateBuilder(ModTags.Items.ORES_ZINC).add(BlockInit.ZINC_ORE.get().asItem());
+			getOrCreateBuilder(ModTags.Items.ORES_SALTPETRE).add(BlockInit.SALTPETRE_ORE.get().asItem());
 			
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_ALUMINUM);
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_AMETHYST);
@@ -231,6 +235,7 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_URANIUM);
 			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_COBALT);
 			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_ZINC);
+			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_SALTPETRE);
 
 			getOrCreateBuilder(ModTags.Blocks.ORES_ALUMINUM).add(BlockInit.ALUMINUM_ORE.get());
 			getOrCreateBuilder(ModTags.Blocks.ORES_AMETHYST).add(BlockInit.AMETHYST_ORE.get());
@@ -249,6 +254,7 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.ORES_URANIUM).add(BlockInit.URANIUM_ORE.get());
 			getOrCreateBuilder(ModTags.Blocks.ORES_COBALT).add(BlockInit.COBALT_ORE.get());
 			getOrCreateBuilder(ModTags.Blocks.ORES_ZINC).add(BlockInit.ZINC_ORE.get());
+			getOrCreateBuilder(ModTags.Blocks.ORES_SALTPETRE).add(BlockInit.SALTPETRE_ORE.get());
 			
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_ALUMINUM);
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_AMETHYST);

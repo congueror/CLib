@@ -15,6 +15,8 @@ import net.minecraft.data.ShapedRecipeBuilder;
 import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.Tag;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.Tags;
 
@@ -1071,5 +1073,25 @@ public class RecipeDataGen extends RecipeProvider
 		CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.ZINC_ORE.get()), ItemInit.ZINC_INGOT.get(), 0.7f, 200)
 		.addCriterion("zinc_ore", hasItem(BlockInit.ZINC_ORE.get()))
 		.build(recipe, new ResourceLocation(CLib.MOD_ID, "zinc_ingot_smelting"));
+		
+		//Saltpetre
+				//ingot_blasting
+				CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockInit.SALTPETRE_ORE.get()), ItemInit.SALTPETRE_DUST.get(), 0.7f, 400)
+				.addCriterion("saltpetre_ore", hasItem(BlockInit.SALTPETRE_ORE.get()))
+				.build(recipe, new ResourceLocation(CLib.MOD_ID, "saltpetre_dust_blasting"));
+																	
+				//ingot_smelting
+				CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.SALTPETRE_ORE.get()), ItemInit.SALTPETRE_DUST.get(), 0.7f, 200)
+				.addCriterion("saltpetre_ore", hasItem(BlockInit.SALTPETRE_ORE.get()))
+				.build(recipe, new ResourceLocation(CLib.MOD_ID, "saltpetre_dust_smelting"));
+				
+		//gunpowder
+				ShapelessRecipeBuilder.shapelessRecipe(Items.GUNPOWDER, 4)
+				.addIngredient(ItemTags.COALS)
+				.addIngredient(ItemTags.COALS)
+				.addIngredient(ModTags.Items.DUSTS_SULFUR)
+				.addIngredient(ModTags.Items.DUSTS_SALTPETRE)
+				.addCriterion("saltpetre_dust", hasItem(ItemInit.SALTPETRE_DUST.get()))
+				.build(recipe);
 	}
 }

@@ -23,6 +23,7 @@ public class ModTags
 			public static final IOptionalNamedTag<Item> BLAZE_POWDER = tag("dusts/blaze_powder");
 			public static final IOptionalNamedTag<Item> DUSTS_PYROTHEUM = tag("dusts/pyrotheum");
 			public static final IOptionalNamedTag<Item> DUSTS_SULFUR = tag("dusts/sulfur");
+			public static final IOptionalNamedTag<Item> DUSTS_SALTPETRE = tag("dusts/saltpetre");
 		public static final IOptionalNamedTag<Item> GEMS = tag("gems");
 			public static final IOptionalNamedTag<Item> GEMS_AMETHYST = tag("gems/amethyst");
 			public static final IOptionalNamedTag<Item> GEMS_OPAL = tag("gems/opal");
@@ -94,6 +95,7 @@ public class ModTags
 			public static final IOptionalNamedTag<Item> ORES_URANIUM = tag("ores/uranium");
 			public static final IOptionalNamedTag<Item> ORES_COBALT = tag("ores/cobalt");
 			public static final IOptionalNamedTag<Item> ORES_ZINC = tag("ores/zinc");
+			public static final IOptionalNamedTag<Item> ORES_SALTPETRE = tag("ores/saltpetre");
 		public static final IOptionalNamedTag<Item> STORAGE_BLOCKS = tag("storage_blocks");
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_ALUMINUM = tag("storage_blocks/aluminum");
 			public static final IOptionalNamedTag<Item> STORAGE_BLOCKS_AMETHYST = tag("storage_blocks/amethyst");
@@ -153,6 +155,7 @@ public class ModTags
 			public static final IOptionalNamedTag<Block> ORES_URANIUM = tag("ores/uranium");
 			public static final IOptionalNamedTag<Block> ORES_COBALT = tag("ores/cobalt");
 			public static final IOptionalNamedTag<Block> ORES_ZINC = tag("ores/zinc");
+			public static final IOptionalNamedTag<Block> ORES_SALTPETRE = tag("ores/saltpetre");
 		public static final IOptionalNamedTag<Block> STORAGE_BLOCKS = tag("storage_blocks");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_ALUMINUM = tag("storage_blocks/aluminum");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_AMETHYST = tag("storage_blocks/amethyst");

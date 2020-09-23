@@ -91,4 +91,6 @@ public class ItemInit
     
     public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("zinc_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> SALTPETRE_DUST = ITEMS.register("saltpetre_dust", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
 }

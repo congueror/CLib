@@ -17,6 +17,7 @@
     "#forge:ores/titanium",
     "#forge:ores/uranium",
     "#forge:ores/cobalt",
-    "#forge:ores/zinc"
+    "#forge:ores/zinc",
+    "#forge:ores/saltpetre"
   ]
 }

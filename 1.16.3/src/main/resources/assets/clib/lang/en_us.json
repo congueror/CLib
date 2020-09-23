@@ -52,6 +52,7 @@
 	"item.clib.cobalt_nugget": "Cobalt Nugget",
 	"item.clib.zinc_ingot": "Zinc Ingot",
 	"item.clib.zinc_nugget": "Zinc Nugget",
+	"item.clib.saltpetre_dust": "Saltpetre Dust",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -93,6 +94,7 @@
 	"block.clib.cobalt_block": "Block of Cobalt",
 	"block.clib.zinc_ore": "Zinc Ore",
 	"block.clib.zinc_block": "Block of Zinc",
+	"block.clib.saltpetre_ore": "Niter Ore",
 	
 	"itemGroup.clibtab": "C's Ores"
 }

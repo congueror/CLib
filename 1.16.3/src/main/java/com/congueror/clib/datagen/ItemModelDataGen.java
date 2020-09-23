@@ -16,6 +16,7 @@ public class ItemModelDataGen extends ItemModelProvider{
 
 	@Override
 	protected void registerModels() {
+		//Aluminum
 		singleTexture(ItemInit.ALUMINUM_INGOT.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
                 "layer0", new ResourceLocation(CLib.MOD_ID, "items/aluminum_ingot"));
 		singleTexture(ItemInit.ALUMINUM_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
@@ -172,6 +173,10 @@ public class ItemModelDataGen extends ItemModelProvider{
 		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/zinc_ingot"));
 				singleTexture(ItemInit.ZINC_NUGGET.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
 		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/zinc_nugget"));
+				
+		//Saltpetre
+				singleTexture(ItemInit.SALTPETRE_DUST.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+		                "layer0", new ResourceLocation(CLib.MOD_ID, "items/saltpetre"));
 	}
 
 }
