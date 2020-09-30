@@ -96,5 +96,8 @@
 	"block.clib.zinc_block": "Block of Zinc",
 	"block.clib.saltpetre_ore": "Niter Ore",
 	
+	"effect.clib.radiation": "Radiation",
+	"death.attack.radiation": "%1$s died from radiation",
+	
 	"itemGroup.clibtab": "C's Ores"
 }

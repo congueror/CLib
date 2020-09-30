@@ -1,4 +1,4 @@
-package com.congueror.clib.objects.blocks.alloysmeter;
+package com.congueror.clib.blocks.alloysmelter;
 
 /*import java.util.Collections;
 import java.util.HashSet;

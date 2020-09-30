@@ -86,16 +86,16 @@ public class ModOreGen
 				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(7).func_242728_a().func_242731_b(1));
 		
 		ModOreGen.ORE_URANIUM = configuredFeature("ore_uranium", Feature.ORE.withConfiguration(new OreFeatureConfig
-				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(1));
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.URANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(16).func_242728_a().func_242731_b(1));
 		
 		ModOreGen.ORE_COBALT = configuredFeature("ore_cobalt", Feature.ORE.withConfiguration(new OreFeatureConfig
-				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(10).func_242728_a().func_242731_b(2));
+				(OreFeatureConfig.FillerBlockType.field_241883_b, BlockInit.COBALT_ORE.get().getDefaultState(), 8)).func_242733_d(10).func_242728_a().func_242731_b(2));
 		
 		ModOreGen.ORE_ZINC = configuredFeature("ore_zinc", Feature.ORE.withConfiguration(new OreFeatureConfig
-				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(40).func_242728_a().func_242731_b(4));
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.ZINC_ORE.get().getDefaultState(), 8)).func_242733_d(40).func_242728_a().func_242731_b(4));
 		
 		ModOreGen.ORE_SALTPETRE = configuredFeature("ore_saltpetre", Feature.ORE.withConfiguration(new OreFeatureConfig
-				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.TITANIUM_ORE.get().getDefaultState(), 8)).func_242733_d(100).func_242728_a().func_242731_b(6));
+				(OreFeatureConfig.FillerBlockType.field_241882_a, BlockInit.SALTPETRE_ORE.get().getDefaultState(), 8)).func_242733_d(100).func_242728_a().func_242731_b(6));
 	
         for (final Biome biome : WorldGenRegistries.BIOME) {
             if (biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NONE) {

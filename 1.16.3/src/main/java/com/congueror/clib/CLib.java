@@ -5,10 +5,12 @@ import org.apache.logging.log4j.Logger;
 
 import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ContainerTypes;
+import com.congueror.clib.init.EffectInit;
 import com.congueror.clib.init.ItemInit;
 import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.util.ClibItemGroup;
 import com.congueror.clib.world.gen.ModOreGen;
+import com.congueror.clib.world.gen.TreeGenFeatures;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -21,9 +23,6 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
-import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -42,7 +41,6 @@ public class CLib
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::clientRegistries);
         modEventBus.addListener(this::doClientStuff);
         
         
@@ -51,6 +49,7 @@ public class CLib
         BlockInit.BLOCKS.register(modEventBus);
         TileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ContainerTypes.CONTAINER_TYPES.register(modEventBus);
+        EffectInit.POTIONS.register(modEventBus);
         
         
         
@@ -78,9 +77,8 @@ public class CLib
     @SubscribeEvent
     public void commonSetup(final FMLCommonSetupEvent event) {
     	ModOreGen.addFeatures();
-    }
-    
-    private void clientRegistries(final FMLClientSetupEvent event) {
+    	
+    	TreeGenFeatures.configs.RUBBER_TREE_CONFIG.forcePlacement = true;
     }
     
     @SuppressWarnings("resource")
@@ -88,18 +86,10 @@ public class CLib
     	LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
     
-    @SubscribeEvent
-    public void onServerStarting(final FMLServerStartingEvent event) {
-    }
-    
-    @SubscribeEvent
-    public void loadComplete(final FMLLoadCompleteEvent event) {
-    	
-    }
-    
-    @SubscribeEvent
-    public void aboutToStart(final FMLServerAboutToStartEvent event) {
-    }
+    public static String find(String name)
+	{
+		return CLib.MOD_ID + ":" + name;
+	}
     
     static {
         LOGGER = LogManager.getLogger();

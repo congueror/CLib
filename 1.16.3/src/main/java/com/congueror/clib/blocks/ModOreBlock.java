@@ -1,4 +1,4 @@
-package com.congueror.clib.objects.blocks;
+package com.congueror.clib.blocks;
 
 import java.util.Random;
 
@@ -19,6 +19,8 @@ public class ModOreBlock extends OreBlock
 	{
 		if(this == BlockInit.RUBY_ORE.get()) {
 			return MathHelper.nextInt(random, 5, 10);
+		}else if(this == BlockInit.SALTPETRE_ORE.get()) {
+			return MathHelper.nextInt(random, 1, 3);
 		}else if(this == BlockInit.SULFUR_ORE.get()) {
 			return MathHelper.nextInt(random, 1, 3);
 		}else if(this == BlockInit.AMETHYST_ORE.get()) {

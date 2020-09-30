@@ -1,4 +1,4 @@
-package com.congueror.clib.objects.items;
+package com.congueror.clib.items;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

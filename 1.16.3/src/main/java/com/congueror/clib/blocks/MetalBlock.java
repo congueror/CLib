@@ -1,4 +1,4 @@
-package com.congueror.clib.objects.blocks;
+package com.congueror.clib.blocks;
 
 import net.minecraft.block.Block;
 

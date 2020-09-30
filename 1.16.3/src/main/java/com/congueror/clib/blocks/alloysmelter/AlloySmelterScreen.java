@@ -1,4 +1,4 @@
-package com.congueror.clib.objects.blocks.alloysmeter;
+package com.congueror.clib.blocks.alloysmelter;
 
 /*import com.congueror.clib.ConguerorLib;
 import com.congueror.clib.container.AlloySmelterContainer;

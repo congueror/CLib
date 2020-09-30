@@ -1,7 +1,10 @@
 package com.congueror.clib.init;
 
 import com.congueror.clib.CLib;
-import com.congueror.clib.objects.items.CoalNuggetItem;
+import com.congueror.clib.items.CoalNuggetItem;
+import com.congueror.clib.items.TreeTapItem;
+import com.congueror.clib.items.UraniumIngotItem;
+import com.congueror.clib.items.UraniumNuggetItem;
 import com.congueror.clib.util.ClibItemGroup;
 
 import net.minecraft.item.Item;
@@ -83,8 +86,8 @@ public class ItemInit
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> TITANIUM_SCRAP = ITEMS.register("titanium_scrap", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     
-    public static final RegistryObject<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
-    public static final RegistryObject<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot", ()-> new UraniumIngotItem(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", ()-> new UraniumNuggetItem(new Item.Properties().group(ClibItemGroup.instance)));
     
     public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
@@ -93,4 +96,7 @@ public class ItemInit
     public static final RegistryObject<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     
     public static final RegistryObject<Item> SALTPETRE_DUST = ITEMS.register("saltpetre_dust", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    
+    public static final RegistryObject<Item> RUBBER = ITEMS.register("rubber", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> TREE_TAP = ITEMS.register("tree_tap", ()-> new TreeTapItem(new Item.Properties().group(ClibItemGroup.instance).maxStackSize(1)));
 }

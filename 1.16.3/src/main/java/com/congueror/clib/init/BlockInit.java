@@ -1,9 +1,15 @@
 package com.congueror.clib.init;
 
 import com.congueror.clib.CLib;
-import com.congueror.clib.objects.blocks.ModOreBlock;
-import com.congueror.clib.objects.blocks.MetalBlock;
+import com.congueror.clib.blocks.MetalBlock;
+import com.congueror.clib.blocks.ModOreBlock;
+import com.congueror.clib.world.gen.tree.RubberTree;
+
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
@@ -108,7 +114,7 @@ public class BlockInit
     public static final RegistryObject<Block> URANIUM_ORE = BLOCKS.register("uranium_ore", () -> new Block
     		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
     public static final RegistryObject<Block> URANIUM_BLOCK = BLOCKS.register("uranium_block", () -> new MetalBlock
-    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
+    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(3).setLightLevel((state) -> {return 4;}).setRequiresTool()));
     
     public static final RegistryObject<Block> COBALT_ORE = BLOCKS.register("cobalt_ore", () -> new Block
     		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
@@ -122,6 +128,13 @@ public class BlockInit
     
     public static final RegistryObject<Block> SALTPETRE_ORE = BLOCKS.register("saltpetre_ore", () -> new ModOreBlock
     		(Block.Properties.create(Material.IRON).hardnessAndResistance(3f, 3f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(0).setRequiresTool()));
+    
+    public static final RegistryObject<Block> RUBBER_LOG = BLOCKS.register("rubber_log", () -> new RotatedPillarBlock
+    		(Block.Properties.from(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> RUBBER_LEAVES = BLOCKS.register("rubber_leaves", () -> new LeavesBlock
+    		(Block.Properties.from(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> RUBBER_SAPLING = BLOCKS.register("rubber_sapling", () -> new SaplingBlock
+    		(new RubberTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
     
     //public static final RegistryObject<Block> ALLOY_SMELTER = BLOCKS.register("alloy_smelter", () -> new AlloySmelterBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(5.5f, 6.5f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool()));
 }
