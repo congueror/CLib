@@ -78,7 +78,7 @@ public class CLib
     public void commonSetup(final FMLCommonSetupEvent event) {
     	ModOreGen.addFeatures();
     	
-    	TreeGenFeatures.configs.RUBBER_TREE_CONFIG.forcePlacement = true;
+    	TreeGenFeatures.configs.RUBBER_TREE_CONFIG.forcePlacement = false;
     }
     
     @SuppressWarnings("resource")
