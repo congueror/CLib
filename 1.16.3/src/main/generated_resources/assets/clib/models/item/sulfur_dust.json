@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "clib:items/sulfur_dust"
+    "layer0": "clib:item/sulfur_dust"
   }
 }

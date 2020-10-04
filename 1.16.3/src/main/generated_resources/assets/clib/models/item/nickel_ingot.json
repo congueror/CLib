@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "clib:items/nickel_ingot"
+    "layer0": "clib:item/nickel_ingot"
   }
 }

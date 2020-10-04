@@ -21,7 +21,7 @@ public class DataGenerators
         {
         	TagsDataGen.BlockTagsDataGen blockTagsProvider = new TagsDataGen.BlockTagsDataGen(event.getGenerator(), event.getExistingFileHelper());
         	generator.addProvider(new RecipeDataGen(generator));
-            //generator.addProvider(new LootTablesDataGen(generator));
+            generator.addProvider(new LootTableDataGen(generator));
             generator.addProvider(new TagsDataGen.BlockTagsDataGen(generator, event.getExistingFileHelper()));
             generator.addProvider(new ItemTagsDataGen(generator, blockTagsProvider, event.getExistingFileHelper()));
         }

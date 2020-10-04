@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa ",
+    "aa ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "clib:rubber_log"
+    }
+  },
+  "result": {
+    "item": "clib:rubber_wood",
+    "count": 3
+  }
+}

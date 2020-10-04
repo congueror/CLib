@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:rubber_logs"
+    }
+  ],
+  "result": {
+    "item": "clib:rubber_planks",
+    "count": 4
+  }
+}

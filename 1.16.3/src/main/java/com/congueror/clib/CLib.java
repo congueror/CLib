@@ -10,7 +10,8 @@ import com.congueror.clib.init.ItemInit;
 import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.util.ClibItemGroup;
 import com.congueror.clib.world.gen.ModOreGen;
-import com.congueror.clib.world.gen.TreeGenFeatures;
+//import com.congueror.clib.world.gen.TreeGenFeatures;
+import com.congueror.clib.world.gen.tree.TreeGenFeatures;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -55,7 +56,7 @@ public class CLib
         
         MinecraftForge.EVENT_BUS.register(this);
         
-        
+        MinecraftForge.EVENT_BUS.register(TreeGenFeatures.class);
     }
     
     @SubscribeEvent

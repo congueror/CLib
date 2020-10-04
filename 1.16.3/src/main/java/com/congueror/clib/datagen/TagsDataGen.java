@@ -207,6 +207,12 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_URANIUM).add(BlockInit.URANIUM_BLOCK.get().asItem());
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_COBALT).add(BlockInit.COBALT_BLOCK.get().asItem());
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_ZINC).add(BlockInit.ZINC_BLOCK.get().asItem());
+			
+			getOrCreateBuilder(ModTags.Items.RUBBER_LOGS).add(BlockInit.RUBBER_LOG.get().asItem());
+			getOrCreateBuilder(ModTags.Items.RUBBER_LOGS).add(BlockInit.RUBBER_WOOD.get().asItem());
+			getOrCreateBuilder(ModTags.Items.RUBBER_LOGS).add(BlockInit.RUBBER_STRIPPED_LOG.get().asItem());
+			getOrCreateBuilder(ModTags.Items.RUBBER_LOGS).add(BlockInit.RUBBER_STRIPPED_WOOD.get().asItem());
+			getOrCreateBuilder(ModTags.Items.RUBBER).add(ItemInit.RUBBER.get());
 		}
 	}
 

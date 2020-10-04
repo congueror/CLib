@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "clib:items/invar_blend"
+    "layer0": "clib:item/invar_blend"
   }
 }

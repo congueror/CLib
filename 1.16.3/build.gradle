@@ -124,9 +124,9 @@ dependencies {
     implementation fg.deobf("com.melanx:recipeprinter-1.16.3:1.1")
     
     // compile against the JEI API but do not include it at runtime
-  	//compileOnly fg.deobf("mezz.jei:jei-1.16.3:7.3.2.30:api")
+  	compileOnly fg.deobf("mezz.jei:jei-1.16.3:7.3.2.36:api")
   	// at runtime, use the full JEI jar
-  	//runtimeOnly fg.deobf("mezz.jei:jei-1.16.3:7.3.2.30")
+  	runtimeOnly fg.deobf("mezz.jei:jei-1.16.3:7.3.2.36")
   	
   	// You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

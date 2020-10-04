@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "clib:items/nickel_nugget"
+    "layer0": "clib:item/nickel_nugget"
   }
 }

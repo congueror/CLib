@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clib:block/enderium_block"
+    }
+  }
+}

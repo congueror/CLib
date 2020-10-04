@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clib:block/tungsten_block"
+    }
+  }
+}

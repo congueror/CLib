@@ -53,6 +53,8 @@
 	"item.clib.zinc_ingot": "Zinc Ingot",
 	"item.clib.zinc_nugget": "Zinc Nugget",
 	"item.clib.saltpetre_dust": "Saltpetre Dust",
+	"item.clib.rubber": "Rubber",
+	"item.clib.tree_tap": "Tree Tap",
 	
 	"block.clib.tin_ore": "Tin Ore",
 	"block.clib.tin_block": "Block of Tin",
@@ -95,6 +97,13 @@
 	"block.clib.zinc_ore": "Zinc Ore",
 	"block.clib.zinc_block": "Block of Zinc",
 	"block.clib.saltpetre_ore": "Niter Ore",
+	"block.clib.rubber_log": "Rubber Log",
+	"block.clib.rubber_wood": "Rubber Wood",
+	"block.clib.rubber_stripped_log": "Stripped Rubber Log",
+	"block.clib.rubber_stripped_wood": "Stripped Rubber Wood",
+	"block.clib.rubber_leaves": "Rubber Leaves",
+	"block.clib.rubber_sapling": "Rubber Sapling",
+	"block.clib.rubber_planks": "Rubber Planks",
 	
 	"effect.clib.radiation": "Radiation",
 	"death.attack.radiation": "%1$s died from radiation",

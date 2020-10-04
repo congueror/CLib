@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clib:block/tin_block"
+    }
+  }
+}

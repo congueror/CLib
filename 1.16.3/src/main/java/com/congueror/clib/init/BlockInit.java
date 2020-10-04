@@ -3,11 +3,12 @@ package com.congueror.clib.init;
 import com.congueror.clib.CLib;
 import com.congueror.clib.blocks.MetalBlock;
 import com.congueror.clib.blocks.ModOreBlock;
+import com.congueror.clib.blocks.RubberLeavesBlock;
+//import com.congueror.clib.world.gen.tree.RubberTree;
 import com.congueror.clib.world.gen.tree.RubberTree;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.RotatedPillarBlock;
 import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.SoundType;
@@ -131,7 +132,15 @@ public class BlockInit
     
     public static final RegistryObject<Block> RUBBER_LOG = BLOCKS.register("rubber_log", () -> new RotatedPillarBlock
     		(Block.Properties.from(Blocks.OAK_LOG)));
-    public static final RegistryObject<Block> RUBBER_LEAVES = BLOCKS.register("rubber_leaves", () -> new LeavesBlock
+    public static final RegistryObject<Block> RUBBER_WOOD = BLOCKS.register("rubber_wood", () -> new RotatedPillarBlock
+    		(Block.Properties.from(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> RUBBER_STRIPPED_LOG = BLOCKS.register("stripped_rubber_log", () -> new RotatedPillarBlock
+    		(Block.Properties.from(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> RUBBER_STRIPPED_WOOD = BLOCKS.register("stripped_rubber_wood", () -> new RotatedPillarBlock
+    		(Block.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> RUBBER_PLANKS = BLOCKS.register("rubber_planks", () -> new Block
+    		(Block.Properties.from(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> RUBBER_LEAVES = BLOCKS.register("rubber_leaves", () -> new RubberLeavesBlock
     		(Block.Properties.from(Blocks.OAK_LEAVES)));
     public static final RegistryObject<Block> RUBBER_SAPLING = BLOCKS.register("rubber_sapling", () -> new SaplingBlock
     		(new RubberTree(), Block.Properties.from(Blocks.OAK_SAPLING)));

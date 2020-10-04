@@ -1075,23 +1075,48 @@ public class RecipeDataGen extends RecipeProvider
 		.build(recipe, new ResourceLocation(CLib.MOD_ID, "zinc_ingot_smelting"));
 		
 		//Saltpetre
-				//ingot_blasting
-				CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockInit.SALTPETRE_ORE.get()), ItemInit.SALTPETRE_DUST.get(), 0.7f, 400)
-				.addCriterion("saltpetre_ore", hasItem(BlockInit.SALTPETRE_ORE.get()))
-				.build(recipe, new ResourceLocation(CLib.MOD_ID, "saltpetre_dust_blasting"));
+		//ingot_blasting
+		CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockInit.SALTPETRE_ORE.get()), ItemInit.SALTPETRE_DUST.get(), 0.7f, 400)
+		.addCriterion("saltpetre_ore", hasItem(BlockInit.SALTPETRE_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "saltpetre_dust_blasting"));
 																	
-				//ingot_smelting
-				CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.SALTPETRE_ORE.get()), ItemInit.SALTPETRE_DUST.get(), 0.7f, 200)
-				.addCriterion("saltpetre_ore", hasItem(BlockInit.SALTPETRE_ORE.get()))
-				.build(recipe, new ResourceLocation(CLib.MOD_ID, "saltpetre_dust_smelting"));
+		//ingot_smelting
+		CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockInit.SALTPETRE_ORE.get()), ItemInit.SALTPETRE_DUST.get(), 0.7f, 200)
+		.addCriterion("saltpetre_ore", hasItem(BlockInit.SALTPETRE_ORE.get()))
+		.build(recipe, new ResourceLocation(CLib.MOD_ID, "saltpetre_dust_smelting"));
 				
 		//gunpowder
-				ShapelessRecipeBuilder.shapelessRecipe(Items.GUNPOWDER, 4)
-				.addIngredient(ItemTags.COALS)
-				.addIngredient(ItemTags.COALS)
-				.addIngredient(ModTags.Items.DUSTS_SULFUR)
-				.addIngredient(ModTags.Items.DUSTS_SALTPETRE)
-				.addCriterion("saltpetre_dust", hasItem(ItemInit.SALTPETRE_DUST.get()))
-				.build(recipe);
+		ShapelessRecipeBuilder.shapelessRecipe(Items.GUNPOWDER, 4)
+		.addIngredient(ItemTags.COALS)
+		.addIngredient(ItemTags.COALS)
+		.addIngredient(ModTags.Items.DUSTS_SULFUR)
+		.addIngredient(ModTags.Items.DUSTS_SALTPETRE)
+		.addCriterion("saltpetre_dust", hasItem(ItemInit.SALTPETRE_DUST.get()))
+		.build(recipe);
+				
+		//Rubber
+		//rubber_planks
+		ShapelessRecipeBuilder.shapelessRecipe(BlockInit.RUBBER_PLANKS.get(), 4)
+		.addIngredient(ModTags.Items.RUBBER_LOGS)
+		.addCriterion("rubber_log", hasItem(ModTags.Items.RUBBER_LOGS))
+		.build(recipe);
+		
+		//rubber_wood
+		ShapedRecipeBuilder.shapedRecipe(BlockInit.RUBBER_WOOD.get(), 3)
+		.patternLine("aa ")
+		.patternLine("aa ")
+		.patternLine("   ")
+		.key('a', BlockInit.RUBBER_LOG.get())
+		.addCriterion("rubber_log", hasItem(BlockInit.RUBBER_LOG.get()))
+		.build(recipe);
+		
+		//stripped_rubber_wood
+		ShapedRecipeBuilder.shapedRecipe(BlockInit.RUBBER_STRIPPED_WOOD.get(), 3)
+		.patternLine("aa ")
+		.patternLine("aa ")
+		.patternLine("   ")
+		.key('a', BlockInit.RUBBER_STRIPPED_LOG.get())
+		.addCriterion("stripped_rubber_log", hasItem(BlockInit.RUBBER_STRIPPED_LOG.get()))
+		.build(recipe);
 	}
 }
