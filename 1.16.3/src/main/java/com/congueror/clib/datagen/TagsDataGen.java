@@ -309,6 +309,11 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_URANIUM).add(BlockInit.URANIUM_BLOCK.get());
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_COBALT).add(BlockInit.COBALT_BLOCK.get());
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_ZINC).add(BlockInit.ZINC_BLOCK.get());
+			
+			getOrCreateBuilder(ModTags.Blocks.RUBBER_LOGS).add(BlockInit.RUBBER_LOG.get());
+			getOrCreateBuilder(ModTags.Blocks.RUBBER_LOGS).add(BlockInit.RUBBER_WOOD.get());
+			getOrCreateBuilder(ModTags.Blocks.RUBBER_LOGS).add(BlockInit.RUBBER_STRIPPED_LOG.get());
+			getOrCreateBuilder(ModTags.Blocks.RUBBER_LOGS).add(BlockInit.RUBBER_STRIPPED_WOOD.get());
 		}
 	}
 }

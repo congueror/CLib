@@ -97,7 +97,7 @@ public class LootTableDataGen extends LootTableProvider implements IDataProvider
              });
             
             this.registerLootTable(BlockInit.SALTPETRE_ORE.get(), (ore) -> {
-                return droppingWithSilkTouch(ore, withExplosionDecay(ore, ItemLootEntry.builder(ItemInit.OPAL.get()).acceptFunction(SetCount.builder(RandomValueRange.of(5.0F, 6.0F))).acceptFunction(ApplyBonus.uniformBonusCount(Enchantments.FORTUNE))));
+                return droppingWithSilkTouch(ore, withExplosionDecay(ore, ItemLootEntry.builder(ItemInit.SALTPETRE_DUST.get()).acceptFunction(SetCount.builder(RandomValueRange.of(5.0F, 6.0F))).acceptFunction(ApplyBonus.uniformBonusCount(Enchantments.FORTUNE))));
              });
             
             this.registerDropSelfLootTable(BlockInit.SAPPHIRE_BLOCK.get());

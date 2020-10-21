@@ -2,11 +2,14 @@ package com.congueror.clib.init;
 
 import com.congueror.clib.CLib;
 import com.congueror.clib.items.CoalNuggetItem;
+import com.congueror.clib.items.HazmatSuitItem;
 import com.congueror.clib.items.TreeTapItem;
 import com.congueror.clib.items.UraniumIngotItem;
 import com.congueror.clib.items.UraniumNuggetItem;
 import com.congueror.clib.util.ClibItemGroup;
+import com.congueror.clib.util.ModArmorMaterial;
 
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -99,4 +102,9 @@ public class ItemInit
     
     public static final RegistryObject<Item> RUBBER = ITEMS.register("rubber", ()-> new Item(new Item.Properties().group(ClibItemGroup.instance)));
     public static final RegistryObject<Item> TREE_TAP = ITEMS.register("tree_tap", ()-> new TreeTapItem(new Item.Properties().group(ClibItemGroup.instance).maxStackSize(1)));
+    
+    public static final RegistryObject<Item> HAZMAT_HELM = ITEMS.register("hazmat_scuba_helmet", ()-> new HazmatSuitItem(ModArmorMaterial.HAZMAT, EquipmentSlotType.HEAD, new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> HAZMAT_CHEST = ITEMS.register("hazmat_suit", ()-> new HazmatSuitItem(ModArmorMaterial.HAZMAT, EquipmentSlotType.CHEST, new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> HAZMAT_LEGS = ITEMS.register("hazmat_suit_legs", ()-> new HazmatSuitItem(ModArmorMaterial.HAZMAT, EquipmentSlotType.LEGS, new Item.Properties().group(ClibItemGroup.instance)));
+    public static final RegistryObject<Item> HAZMAT_BOOTS = ITEMS.register("rubber_boots", ()-> new HazmatSuitItem(ModArmorMaterial.HAZMAT, EquipmentSlotType.FEET, new Item.Properties().group(ClibItemGroup.instance)));
 }

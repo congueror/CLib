@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " o ",
+    "aga",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:rubber"
+    },
+    "o": {
+      "tag": "forge:dyes/yellow"
+    },
+    "g": {
+      "tag": "forge:glass"
+    },
+    "b": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "clib:hazmat_scuba_helmet"
+  }
+}

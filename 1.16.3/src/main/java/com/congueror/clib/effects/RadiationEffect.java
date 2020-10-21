@@ -21,6 +21,6 @@ public class RadiationEffect extends Effect
 	@Override
     public boolean isReady(int duration, int amplifier)
     {
-        return true;
+		return true;
     }
 }

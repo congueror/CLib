@@ -183,6 +183,16 @@ public class ItemModelDataGen extends ItemModelProvider{
 				"layer0", new ResourceLocation(CLib.MOD_ID, "item/rubber"));
 		singleTexture(ItemInit.TREE_TAP.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
                 "layer0", new ResourceLocation(CLib.MOD_ID, "item/tree_tap"));
+		
+		//Hazmat
+		singleTexture(ItemInit.HAZMAT_HELM.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+				"layer0", new ResourceLocation(CLib.MOD_ID, "item/hazmat_helmet"));
+		singleTexture(ItemInit.HAZMAT_CHEST.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+                "layer0", new ResourceLocation(CLib.MOD_ID, "item/hazmat_chestplate"));
+		singleTexture(ItemInit.HAZMAT_LEGS.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+				"layer0", new ResourceLocation(CLib.MOD_ID, "item/hazmat_leggings"));
+		singleTexture(ItemInit.HAZMAT_BOOTS.get().getRegistryName().getPath(), new ResourceLocation("item/generated"),
+                "layer0", new ResourceLocation(CLib.MOD_ID, "item/hazmat_boots"));
 	}
 
 }

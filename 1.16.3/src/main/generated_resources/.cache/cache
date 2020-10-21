@@ -108,6 +108,9 @@ c1c751d863774b36b58d914a45802813f32d08c2 assets/clib/models/item/enderium_blend.
 ffc0202231037bb7f51c66751cdd094592ae660a assets/clib/models/item/enderium_block.json
 039e8acb2fdfff4d16a6407b0fb7788ca9fe2962 assets/clib/models/item/enderium_ingot.json
 5897a597bb317819c0f48001610ed2e206ba012a assets/clib/models/item/enderium_nugget.json
+f23819d4a75e162fd48bb20ce60bb689100ed978 assets/clib/models/item/hazmat_scuba_helmet.json
+61b509cffb36d29a86bacbe49b9f30f7ba75bf7b assets/clib/models/item/hazmat_suit.json
+a64f47c24af7a68c3e117aba94763fee60d927c8 assets/clib/models/item/hazmat_suit_legs.json
 449076b4257789b40da9e1b9f54a29489e48ed1c assets/clib/models/item/invar_blend.json
 213f2a48bc81234e8d61c11129480ac73335a4ec assets/clib/models/item/invar_block.json
 8616c9716b5580c29542a3e05bdd501cb353080b assets/clib/models/item/invar_ingot.json
@@ -133,6 +136,7 @@ d0144de787104786244f438b1a2310a8b8d62f7b assets/clib/models/item/platinum_nugget
 db44a25f75ff393476676e7bda551c1d2c904428 assets/clib/models/item/platinum_ore.json
 244c6700ae2cb86ae161a99b8a506cf3954e3260 assets/clib/models/item/pyrotheum_dust.json
 51dca5dfcd5d7a35baecdf1c5454ff5fd13c5b2e assets/clib/models/item/rubber.json
+f9ee7cf7652b8b0502d11c5b5cd67bd357eafe77 assets/clib/models/item/rubber_boots.json
 c0bc1dd3373fa6ea97411c51fc337744361b3a80 assets/clib/models/item/rubber_leaves.json
 b5dc23509ff4a974c48efa2d22ce33e1f6c445b4 assets/clib/models/item/rubber_log.json
 e89b34183486fc048f74d4bd0f65eda6fb30d020 assets/clib/models/item/rubber_planks.json
@@ -228,6 +232,9 @@ b1074dd0d72c212a5205bd8cfcdffe011c9457a8 data/clib/advancements/recipes/clibtab/
 d2fd8f45d21db3a624e977145b67c2177fe703ac data/clib/advancements/recipes/clibtab/enderium_ingot_nuggets.json
 73440b7ad60488eed79de026292a51548237649e data/clib/advancements/recipes/clibtab/enderium_ingot_smelting.json
 abd319ae4a3c09b08e6defaf5d7868c7005f3c36 data/clib/advancements/recipes/clibtab/enderium_nugget.json
+d8ddc6684ad33e70ec074ea73686ef03cb5bb2b2 data/clib/advancements/recipes/clibtab/hazmat_scuba_helmet.json
+51740bcbcce019773e31cdb27ed9eded1651ff85 data/clib/advancements/recipes/clibtab/hazmat_suit.json
+8544254aa81372a6226ab6c0fe11b0624c1f1163 data/clib/advancements/recipes/clibtab/hazmat_suit_legs.json
 8e7e690f8797ffefedc276bf9e1739d2c68ee08a data/clib/advancements/recipes/clibtab/invar_blend.json
 f4cebcebc047b81de7a751b526e14d707a090d7c data/clib/advancements/recipes/clibtab/invar_block.json
 7f06b3fb52981f20234dd7a0725a39312fddfed0 data/clib/advancements/recipes/clibtab/invar_ingot_blasting.json
@@ -265,6 +272,8 @@ afbde2b25c22b92dbcac1fba549b6b6b04a8e164 data/clib/advancements/recipes/clibtab/
 46bba57d575bb8191b3ee14531d2850bf2fa8937 data/clib/advancements/recipes/clibtab/platinum_ingot_smelting.json
 3c9ed3158cde07f78a772d3d854e1a8007c0bd3b data/clib/advancements/recipes/clibtab/platinum_nugget.json
 ee71e3002c1facbad1d568c399e9984ec4304b6e data/clib/advancements/recipes/clibtab/pyrotheum_dust.json
+bc4faf1bd0790d6b84531a11a1cd2c311d800644 data/clib/advancements/recipes/clibtab/rubber.json
+1e34fd5fdecff69bb4589848c33db8b53dbe40df data/clib/advancements/recipes/clibtab/rubber_boots.json
 7ffd05e2c5c6c1850639d2b9c72fabfaea3b4fdb data/clib/advancements/recipes/clibtab/rubber_planks.json
 c5427c20b7d7cb08beddcf52a15a8763e728fc9d data/clib/advancements/recipes/clibtab/rubber_wood.json
 f4a037493247a6bfa143b7d3e95f30a0c7877aa0 data/clib/advancements/recipes/clibtab/ruby_blasting.json
@@ -313,6 +322,7 @@ f4d96450739de23d531601a1650fdb3ffc403f72 data/clib/advancements/recipes/clibtab/
 f8b97090ebdf77e1e49f1591f10bf5f399daabc9 data/clib/advancements/recipes/clibtab/titanium_ingot_nuggets.json
 21aebfa523d74c0975bef0a6e55fbb89521165c1 data/clib/advancements/recipes/clibtab/titanium_ingot_smelting.json
 d7f64fefd47c79cd9f8ca699bfabec62ba361ebf data/clib/advancements/recipes/clibtab/titanium_nugget.json
+1e2e62066bbb26029aa60a4da09decaaefe2f143 data/clib/advancements/recipes/clibtab/tree_tap.json
 e46482de1d54729f204bdf37d188d5c98a9adfe6 data/clib/advancements/recipes/clibtab/tungsten_block.json
 e6c665e880e8b35d113e4e7d26846d1ba9c8cc33 data/clib/advancements/recipes/clibtab/tungsten_ingot_blasting.json
 2f9f25b5a437ba1c6b5139c1e9859c24c7421fdb data/clib/advancements/recipes/clibtab/tungsten_ingot_block.json
@@ -360,7 +370,7 @@ fffd895cc1292cb086954f730f72e0fd1bff3a3f data/clib/loot_tables/blocks/rubber_log
 43ee82c4f006eb434cda21ac99272619ed8ad4c8 data/clib/loot_tables/blocks/rubber_wood.json
 f15ec8c55e7d79b20a413d1fdeca2f904a167ffa data/clib/loot_tables/blocks/ruby_block.json
 ed5eff9bbed59b854f322c8dce982d96faaeefd1 data/clib/loot_tables/blocks/ruby_ore.json
-6e0ce1d5d30bd62c17441fc98b21f7bcadf4d769 data/clib/loot_tables/blocks/saltpetre_ore.json
+8e0fc324426ccd07e3e4a9d7b30189e60cc1ee1f data/clib/loot_tables/blocks/saltpetre_ore.json
 c018d883440fc616555e43a1ca91c2842bbd13ce data/clib/loot_tables/blocks/sapphire_block.json
 32c8065537a35088c368f9a7a4a39ee5a03be592 data/clib/loot_tables/blocks/sapphire_ore.json
 a58158c7843cd69644f7aea52cfc49aec9264c5b data/clib/loot_tables/blocks/signalum_block.json
@@ -425,6 +435,9 @@ d74423baedd6ad3c0140caecc12f34411cd97b84 data/clib/recipes/enderium_ingot_block.
 d1856b4efba7ddedccaf168f72239e49b5015c66 data/clib/recipes/enderium_ingot_nuggets.json
 178ef689ded8d26bc0581ef640de22b071f7fb30 data/clib/recipes/enderium_ingot_smelting.json
 046a71ccb091ccdd4cf055bd66ba67ee42e865ca data/clib/recipes/enderium_nugget.json
+545549f94487108bb99d9b77496a2d225bd7c495 data/clib/recipes/hazmat_scuba_helmet.json
+e2aa134944e2fb48cafc236788fff05de56b6c45 data/clib/recipes/hazmat_suit.json
+3b2f029d6a3bec7edbb94c292b88c4cbe771a7b5 data/clib/recipes/hazmat_suit_legs.json
 21c59fd774837512b258230a570b9ef028f19e0d data/clib/recipes/invar_blend.json
 12c7ff9a739f61670c1224e8564b9392eaf66baa data/clib/recipes/invar_block.json
 55dd841aa6e61cea2f38ceb1e9d936cf0d4cd617 data/clib/recipes/invar_ingot_blasting.json
@@ -462,6 +475,8 @@ df23b976e6c9b61f8d2d1e78dee0e4aae2f98268 data/clib/recipes/platinum_ingot_nugget
 85f71e483ac8e584ee93f5cd84ce73b0d5cbf087 data/clib/recipes/platinum_ingot_smelting.json
 d0d75c4c70a26c1ec016cc9a007dd5ba66982fe1 data/clib/recipes/platinum_nugget.json
 2e6578e650414a5698fbbfa00f85cf3c66631b6f data/clib/recipes/pyrotheum_dust.json
+46b72aab87239424aca2ef729bfe258fe118c10d data/clib/recipes/rubber.json
+dd12277ec40a68db13cfa677168876a74695f078 data/clib/recipes/rubber_boots.json
 00067c95f9330540654e8203a4dd6e4327da86f7 data/clib/recipes/rubber_planks.json
 6af5f8965e468c21ab7c31ba7297857707088c02 data/clib/recipes/rubber_wood.json
 b671e2944fcb8d7541f9618bacd568cd9ab41fa1 data/clib/recipes/ruby_blasting.json
@@ -510,6 +525,7 @@ f12818a82b3376d736c8df2c7df3674191cef767 data/clib/recipes/titanium_ingot.json
 fb0b64d26f90ac218f5913175f60c974cc9de91b data/clib/recipes/titanium_ingot_nuggets.json
 7b62e1feb47e36ad6c7335b35c0b6f71e57d1efc data/clib/recipes/titanium_ingot_smelting.json
 f998ee7b3c05b34b196a01be040118192f33e4da data/clib/recipes/titanium_nugget.json
+61bfe2667569f587dd5a370ee9338dc6f2345150 data/clib/recipes/tree_tap.json
 c99e96012d721de58bf81cfaca347f514c5780d1 data/clib/recipes/tungsten_block.json
 f2d553f5a6b1530a7d9553fa7780d0a65366d6c4 data/clib/recipes/tungsten_ingot_blasting.json
 5768afa1ca0511a74215253fd59544872705d35a data/clib/recipes/tungsten_ingot_block.json
@@ -547,6 +563,7 @@ f46627d517707dbce4fe5332c7834ff2a7057253 data/forge/tags/blocks/ores/titanium.js
 f35fc409beee48872a81fc7aa481ec73e6823537 data/forge/tags/blocks/ores/tungsten.json
 73f5480e95de4accc616027a2f91b4aae4c32a40 data/forge/tags/blocks/ores/uranium.json
 6305ef2574890097dafaea4958604f4c6c7188d4 data/forge/tags/blocks/ores/zinc.json
+6056df1790b4a29e846334de77b869302f0cbcb2 data/forge/tags/blocks/rubber_logs.json
 f2981a3049cfe9868f39f2b26fc36a15cf37b3c2 data/forge/tags/blocks/storage_blocks.json
 59652fc5d5696fde5ed0681c31bc6bbd563b017e data/forge/tags/blocks/storage_blocks/aluminum.json
 5a646865f0b1a78fdc730609cb5000fc55ac75b9 data/forge/tags/blocks/storage_blocks/amethyst.json

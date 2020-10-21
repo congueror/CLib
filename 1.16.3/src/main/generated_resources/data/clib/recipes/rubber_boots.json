@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "a a",
+    "awa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:rubber"
+    },
+    "w": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "item": "clib:rubber_boots"
+  }
+}

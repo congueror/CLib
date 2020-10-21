@@ -1,4 +1,4 @@
-package com.congueror.clib.world.gen.tree;
+package com.congueror.clib.world.gen;
 
 import com.congueror.clib.CLib;
 import com.congueror.clib.init.BlockInit;

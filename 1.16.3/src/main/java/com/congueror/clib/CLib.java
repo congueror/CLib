@@ -9,10 +9,13 @@ import com.congueror.clib.init.EffectInit;
 import com.congueror.clib.init.ItemInit;
 import com.congueror.clib.init.TileEntityTypes;
 import com.congueror.clib.util.ClibItemGroup;
-import com.congueror.clib.world.gen.ModOreGen;
-//import com.congueror.clib.world.gen.TreeGenFeatures;
-import com.congueror.clib.world.gen.tree.TreeGenFeatures;
+import com.congueror.clib.util.Strippables;
+import com.congueror.clib.world.gen.OreGenFeatures;
+import com.congueror.clib.world.gen.TreeGenFeatures;
+import com.congueror.clib.world.gen.OreGen;
 
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -24,6 +27,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -43,7 +47,7 @@ public class CLib
         
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::doClientStuff);
-        
+        modEventBus.addListener(this::loadComplete);
         
         CLib.instance = this;
         ItemInit.ITEMS.register(modEventBus);
@@ -77,7 +81,10 @@ public class CLib
     
     @SubscribeEvent
     public void commonSetup(final FMLCommonSetupEvent event) {
-    	ModOreGen.addFeatures();
+    	//ModOreGen.addFeatures();
+    	
+    	OreGenFeatures.initModFeatures();
+        OreGen.setupOreGenerator();
     	
     	TreeGenFeatures.configs.RUBBER_TREE_CONFIG.forcePlacement = false;
     }
@@ -85,6 +92,13 @@ public class CLib
     @SuppressWarnings("resource")
 	private void doClientStuff(final FMLClientSetupEvent event) {
     	LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+    	
+    	RenderTypeLookup.setRenderLayer(BlockInit.RUBBER_SAPLING.get(), RenderType.getCutout());
+    }
+    
+    @SubscribeEvent
+    public void loadComplete(final FMLLoadCompleteEvent event) {
+    	Strippables.strippableLogs();
     }
     
     public static String find(String name)

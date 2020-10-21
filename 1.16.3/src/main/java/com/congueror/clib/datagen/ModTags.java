@@ -3,7 +3,6 @@ package com.congueror.clib.datagen;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ITag;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.Tags.IOptionalNamedTag;
@@ -183,7 +182,7 @@ public class ModTags
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_URANIUM = tag("storage_blocks/uranium");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_COBALT = tag("storage_blocks/cobalt");
 			public static final IOptionalNamedTag<Block> STORAGE_BLOCKS_ZINC = tag("storage_blocks/zinc");
-		public static final ITag<Block> RUBBER_LOGS = tag("rubber_logs");
+		public static final IOptionalNamedTag<Block> RUBBER_LOGS = tag("rubber_logs");
 			
 		private static IOptionalNamedTag<Block> tag(String name)
 	    {

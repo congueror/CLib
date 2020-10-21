@@ -7,6 +7,7 @@ import com.congueror.clib.init.BlockInit;
 import com.congueror.clib.init.ItemInit;
 import com.congueror.clib.util.ClibItemGroup;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.data.CookingRecipeBuilder;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
@@ -15,10 +16,12 @@ import net.minecraft.data.ShapedRecipeBuilder;
 import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.Tag;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.data.ForgeItemTagsProvider;
 
 @SuppressWarnings("unused")
 public class RecipeDataGen extends RecipeProvider
@@ -1117,6 +1120,63 @@ public class RecipeDataGen extends RecipeProvider
 		.patternLine("   ")
 		.key('a', BlockInit.RUBBER_STRIPPED_LOG.get())
 		.addCriterion("stripped_rubber_log", hasItem(BlockInit.RUBBER_STRIPPED_LOG.get()))
+		.build(recipe);
+		
+		//rubber
+		ShapelessRecipeBuilder.shapelessRecipe(ItemInit.RUBBER.get(), 1)
+		.addIngredient(ModTags.Items.RUBBER_LOGS)
+		.addIngredient(ModTags.Items.RUBBER_LOGS)
+		.addIngredient(ModTags.Items.RUBBER_LOGS)
+		.addIngredient(ItemInit.TREE_TAP.get())
+		.addCriterion("rubber_log", hasItem(ModTags.Items.RUBBER_LOGS))
+		.build(recipe);
+		
+		//treetap
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.TREE_TAP.get(), 1)
+		.patternLine(" a ")
+		.patternLine("aaa")
+		.patternLine("a  ")
+		.key('a', ItemTags.PLANKS)
+		.addCriterion("planks", hasItem(ItemTags.PLANKS))
+		.build(recipe);
+		
+		//Hazmat Suit
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.HAZMAT_CHEST.get(), 1)
+		.patternLine("a a")
+		.patternLine("aoa")
+		.patternLine("aoa")
+		.key('a', ModTags.Items.RUBBER)
+		.key('o', Tags.Items.DYES_YELLOW)
+		.addCriterion("rubber", hasItem(ModTags.Items.RUBBER))
+		.build(recipe);
+		
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.HAZMAT_LEGS.get(), 1)
+		.patternLine("aoa")
+		.patternLine("a a")
+		.patternLine("a a")
+		.key('a', ModTags.Items.RUBBER)
+		.key('o', Tags.Items.DYES_YELLOW)
+		.addCriterion("rubber", hasItem(ModTags.Items.RUBBER))
+		.build(recipe);
+		
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.HAZMAT_HELM.get(), 1)
+		.patternLine(" o ")
+		.patternLine("aga")
+		.patternLine("aba")
+		.key('a', ModTags.Items.RUBBER)
+		.key('o', Tags.Items.DYES_YELLOW)
+		.key('g', Tags.Items.GLASS)
+		.key('b', Blocks.IRON_BARS)
+		.addCriterion("rubber", hasItem(ModTags.Items.RUBBER))
+		.build(recipe);
+		
+		ShapedRecipeBuilder.shapedRecipe(ItemInit.HAZMAT_BOOTS.get(), 1)
+		.patternLine("a a")
+		.patternLine("a a")
+		.patternLine("awa")
+		.key('a', ModTags.Items.RUBBER)
+		.key('w', ItemTags.WOOL)
+		.addCriterion("rubber", hasItem(ModTags.Items.RUBBER))
 		.build(recipe);
 	}
 }

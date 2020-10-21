@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aoa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:rubber"
+    },
+    "o": {
+      "tag": "forge:dyes/yellow"
+    }
+  },
+  "result": {
+    "item": "clib:hazmat_suit_legs"
+  }
+}
