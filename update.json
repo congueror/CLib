@@ -1,12 +1,13 @@
 {
   "homepage": "https://github.com/congueror/CLib",
   "promos": {
-	"1.16.3-latest": "1.4.0",
-	"1.16.3-recommended": "1.4.0",
+	"1.16.3-latest": "1.5.0",
+	"1.16.3-recommended": "1.5.0",
     "1.16.2-latest": "1.2.2",
     "1.16.2-recommended": "1.2.2"
   },
   "1.16.3": {
+	"1.5.0": "Added ores, dust, hammers",
 	"1.4.0": "Added rubber wood, overhauled ore gen, balanced ore gen",
 	"1.3.3": "Fixed drops",
 	"1.3.2": "Radiation, fixes",
