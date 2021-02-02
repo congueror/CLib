@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:sapphire"
+    },
+    {
+      "tag": "clib:hammers/tier_2_hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:sapphire_dust"
+  }
+}

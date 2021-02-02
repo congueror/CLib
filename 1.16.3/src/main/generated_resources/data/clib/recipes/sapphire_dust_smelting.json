@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:sapphire_dust"
+  },
+  "result": "clib:sapphire",
+  "experience": 0.7,
+  "cookingtime": 200
+}

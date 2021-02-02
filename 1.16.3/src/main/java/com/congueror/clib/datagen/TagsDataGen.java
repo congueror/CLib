@@ -20,15 +20,90 @@ public class TagsDataGen {
 
 		@Override
 		protected void registerTags() {
+			getOrCreateBuilder(ModTags.Items.HAMMERS).add(ItemInit.IRON_HAMMER.get());
+			getOrCreateBuilder(ModTags.Items.HAMMERS).add(ItemInit.DIAMOND_HAMMER.get());
+			getOrCreateBuilder(ModTags.Items.HAMMERS).add(ItemInit.NETHERITE_HAMMER.get());
+			getOrCreateBuilder(ModTags.Items.TIER_2_HAMMERS).add(ItemInit.DIAMOND_HAMMER.get());
+			getOrCreateBuilder(ModTags.Items.TIER_2_HAMMERS).add(ItemInit.NETHERITE_HAMMER.get());
+			getOrCreateBuilder(ModTags.Items.TIER_3_HAMMERS).add(ItemInit.NETHERITE_HAMMER.get());
+			
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_PYROTHEUM);
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SULFUR);
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.BLAZE_POWDER);
 			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SALTPETRE);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_COAL);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_IRON);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_GOLD);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_LAPIS);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SALTPETRE);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_DIAMOND);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_EMERALD);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_NETHERITE);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_ALUMINUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_AMETHYST);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_BRASS);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_BRONZE);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_CHROMIUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_COBALT);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_COPPER);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_ELECTRUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_ENDERIUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_INVAR);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_LEAD);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_LUMIUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_NICKEL);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_OPAL);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_PLATINUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_RUBY);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SAPPHIRE);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SIGNALUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_SILVER);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_STEEL);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_THORIUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_TIN);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_TITANIUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_TUNGSTEN);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_URANIUM);
+			getOrCreateBuilder(ModTags.Items.DUSTS).addTag(ModTags.Items.DUSTS_ZINC);
 			
 			getOrCreateBuilder(ModTags.Items.DUSTS_PYROTHEUM).add(ItemInit.PYROTHEUM_DUST.get());
 			getOrCreateBuilder(ModTags.Items.DUSTS_SULFUR).add(ItemInit.SULFUR_DUST.get());
 			getOrCreateBuilder(ModTags.Items.BLAZE_POWDER).add(Items.BLAZE_POWDER);
 			getOrCreateBuilder(ModTags.Items.DUSTS_SALTPETRE).add(ItemInit.SALTPETRE_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_COAL).add(ItemInit.COAL_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_IRON).add(ItemInit.IRON_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_GOLD).add(ItemInit.GOLD_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_LAPIS).add(ItemInit.LAPIS_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_QUARTZ).add(ItemInit.QUARTZ_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_DIAMOND).add(ItemInit.DIAMOND_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_EMERALD).add(ItemInit.EMERALD_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_NETHERITE).add(ItemInit.NETHERITE_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_ALUMINUM).add(ItemInit.ALUMINUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_AMETHYST).add(ItemInit.AMETHYST_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_BRASS).add(ItemInit.BRASS_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_BRONZE).add(ItemInit.BRONZE_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_CHROMIUM).add(ItemInit.CHROMIUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_COBALT).add(ItemInit.COBALT_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_COPPER).add(ItemInit.COPPER_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_ELECTRUM).add(ItemInit.ELECTRUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_ENDERIUM).add(ItemInit.ENDERIUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_INVAR).add(ItemInit.INVAR_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_LEAD).add(ItemInit.LEAD_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_LUMIUM).add(ItemInit.LUMIUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_NICKEL).add(ItemInit.NICKEL_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_OPAL).add(ItemInit.OPAL_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_PLATINUM).add(ItemInit.PLATINUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_RUBY).add(ItemInit.RUBY_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_SAPPHIRE).add(ItemInit.SAPPHIRE_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_SIGNALUM).add(ItemInit.SIGNALUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_SILVER).add(ItemInit.SILVER_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_STEEL).add(ItemInit.STEEL_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_THORIUM).add(ItemInit.THORIUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_TIN).add(ItemInit.TIN_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_TITANIUM).add(ItemInit.TITANIUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_TUNGSTEN).add(ItemInit.TUNGSTEN_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_URANIUM).add(ItemInit.URANIUM_DUST.get());
+			getOrCreateBuilder(ModTags.Items.DUSTS_ZINC).add(ItemInit.ZINC_DUST.get());
 			
 			getOrCreateBuilder(ModTags.Items.GEMS).addTag(ModTags.Items.GEMS_AMETHYST);
 			getOrCreateBuilder(ModTags.Items.GEMS).addTag(ModTags.Items.GEMS_OPAL);
@@ -59,6 +134,9 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.INGOTS).addTag(ModTags.Items.INGOTS_URANIUM);
 			getOrCreateBuilder(ModTags.Items.INGOTS).addTag(ModTags.Items.INGOTS_COBALT);
 			getOrCreateBuilder(ModTags.Items.INGOTS).addTag(ModTags.Items.INGOTS_ZINC);
+			getOrCreateBuilder(ModTags.Items.INGOTS).addTag(ModTags.Items.INGOTS_BRASS);
+			getOrCreateBuilder(ModTags.Items.INGOTS).addTag(ModTags.Items.INGOTS_CHROMIUM);
+			getOrCreateBuilder(ModTags.Items.INGOTS).addTag(ModTags.Items.INGOTS_THORIUM);
 			
 			getOrCreateBuilder(ModTags.Items.INGOTS_ALUMINUM).add(ItemInit.ALUMINUM_INGOT.get());
 			getOrCreateBuilder(ModTags.Items.INGOTS_BRONZE).add(ItemInit.BRONZE_INGOT.get());
@@ -79,6 +157,9 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.INGOTS_URANIUM).add(ItemInit.URANIUM_INGOT.get());
 			getOrCreateBuilder(ModTags.Items.INGOTS_COBALT).add(ItemInit.COBALT_INGOT.get());
 			getOrCreateBuilder(ModTags.Items.INGOTS_ZINC).add(ItemInit.ZINC_INGOT.get());
+			getOrCreateBuilder(ModTags.Items.INGOTS_BRASS).add(ItemInit.BRASS_INGOT.get());
+			getOrCreateBuilder(ModTags.Items.INGOTS_CHROMIUM).add(ItemInit.CHROMIUM_INGOT.get());
+			getOrCreateBuilder(ModTags.Items.INGOTS_THORIUM).add(ItemInit.THORIUM_INGOT.get());
 			
 			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_ALUMINUM);
 			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_BRONZE);
@@ -100,6 +181,9 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_URANIUM);
 			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_COBALT);
 			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_ZINC);
+			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_BRASS);
+			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_CHROMIUM);
+			getOrCreateBuilder(ModTags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_THORIUM);
 			
 			getOrCreateBuilder(ModTags.Items.NUGGETS_ALUMINUM).add(ItemInit.ALUMINUM_NUGGET.get());
 			getOrCreateBuilder(ModTags.Items.NUGGETS_BRONZE).add(ItemInit.BRONZE_NUGGET.get());
@@ -121,6 +205,9 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.NUGGETS_URANIUM).add(ItemInit.URANIUM_NUGGET.get());
 			getOrCreateBuilder(ModTags.Items.NUGGETS_COBALT).add(ItemInit.COBALT_NUGGET.get());
 			getOrCreateBuilder(ModTags.Items.NUGGETS_ZINC).add(ItemInit.ZINC_NUGGET.get());
+			getOrCreateBuilder(ModTags.Items.NUGGETS_BRASS).add(ItemInit.BRASS_NUGGET.get());
+			getOrCreateBuilder(ModTags.Items.NUGGETS_CHROMIUM).add(ItemInit.CHROMIUM_NUGGET.get());
+			getOrCreateBuilder(ModTags.Items.NUGGETS_THORIUM).add(ItemInit.THORIUM_NUGGET.get());
 			
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_ALUMINUM);
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_AMETHYST);
@@ -140,6 +227,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_COBALT);
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_ZINC);
 			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_SALTPETRE);
+			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_CHROMIUM);
+			getOrCreateBuilder(ModTags.Items.ORES).addTag(ModTags.Items.ORES_THORIUM);
 
 			getOrCreateBuilder(ModTags.Items.ORES_ALUMINUM).add(BlockInit.ALUMINUM_ORE.get().asItem());
 			getOrCreateBuilder(ModTags.Items.ORES_AMETHYST).add(BlockInit.AMETHYST_ORE.get().asItem());
@@ -159,6 +248,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.ORES_COBALT).add(BlockInit.COBALT_ORE.get().asItem());
 			getOrCreateBuilder(ModTags.Items.ORES_ZINC).add(BlockInit.ZINC_ORE.get().asItem());
 			getOrCreateBuilder(ModTags.Items.ORES_SALTPETRE).add(BlockInit.SALTPETRE_ORE.get().asItem());
+			getOrCreateBuilder(ModTags.Items.ORES_CHROMIUM).add(BlockInit.CHROMIUM_ORE.get().asItem());
+			getOrCreateBuilder(ModTags.Items.ORES_THORIUM).add(BlockInit.THORIUM_ORE.get().asItem());
 			
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_ALUMINUM);
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_AMETHYST);
@@ -183,6 +274,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_URANIUM);
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_COBALT);
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_ZINC);
+			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_BRASS);
+			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS).addTag(ModTags.Items.STORAGE_BLOCKS_CHROMIUM);
 
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_ALUMINUM).add(BlockInit.ALUMINUM_BLOCK.get().asItem());
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_AMETHYST).add(BlockInit.AMETHYST_BLOCK.get().asItem());
@@ -207,6 +300,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_URANIUM).add(BlockInit.URANIUM_BLOCK.get().asItem());
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_COBALT).add(BlockInit.COBALT_BLOCK.get().asItem());
 			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_ZINC).add(BlockInit.ZINC_BLOCK.get().asItem());
+			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_BRASS).add(BlockInit.BRASS_BLOCK.get().asItem());
+			getOrCreateBuilder(ModTags.Items.STORAGE_BLOCKS_CHROMIUM).add(BlockInit.CHROMIUM_BLOCK.get().asItem());
 			
 			getOrCreateBuilder(ModTags.Items.RUBBER_LOGS).add(BlockInit.RUBBER_LOG.get().asItem());
 			getOrCreateBuilder(ModTags.Items.RUBBER_LOGS).add(BlockInit.RUBBER_WOOD.get().asItem());
@@ -242,6 +337,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_COBALT);
 			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_ZINC);
 			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_SALTPETRE);
+			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_CHROMIUM);
+			getOrCreateBuilder(ModTags.Blocks.ORES).addTag(ModTags.Blocks.ORES_THORIUM);
 
 			getOrCreateBuilder(ModTags.Blocks.ORES_ALUMINUM).add(BlockInit.ALUMINUM_ORE.get());
 			getOrCreateBuilder(ModTags.Blocks.ORES_AMETHYST).add(BlockInit.AMETHYST_ORE.get());
@@ -261,6 +358,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.ORES_COBALT).add(BlockInit.COBALT_ORE.get());
 			getOrCreateBuilder(ModTags.Blocks.ORES_ZINC).add(BlockInit.ZINC_ORE.get());
 			getOrCreateBuilder(ModTags.Blocks.ORES_SALTPETRE).add(BlockInit.SALTPETRE_ORE.get());
+			getOrCreateBuilder(ModTags.Blocks.ORES_CHROMIUM).add(BlockInit.CHROMIUM_ORE.get());
+			getOrCreateBuilder(ModTags.Blocks.ORES_THORIUM).add(BlockInit.THORIUM_ORE.get());
 			
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_ALUMINUM);
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_AMETHYST);
@@ -285,6 +384,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_URANIUM);
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_COBALT);
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_ZINC);
+			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_BRASS);
+			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_CHROMIUM);
 
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(BlockInit.ALUMINUM_BLOCK.get());
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_AMETHYST).add(BlockInit.AMETHYST_BLOCK.get());
@@ -309,6 +410,8 @@ public class TagsDataGen {
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_URANIUM).add(BlockInit.URANIUM_BLOCK.get());
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_COBALT).add(BlockInit.COBALT_BLOCK.get());
 			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_ZINC).add(BlockInit.ZINC_BLOCK.get());
+			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_BRASS).add(BlockInit.BRASS_BLOCK.get());
+			getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_CHROMIUM).add(BlockInit.CHROMIUM_BLOCK.get());
 			
 			getOrCreateBuilder(ModTags.Blocks.RUBBER_LOGS).add(BlockInit.RUBBER_LOG.get());
 			getOrCreateBuilder(ModTags.Blocks.RUBBER_LOGS).add(BlockInit.RUBBER_WOOD.get());

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "tag": "clib:hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:gold_dust"
+  }
+}

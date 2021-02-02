@@ -126,6 +126,11 @@ public class LootTableDataGen extends LootTableProvider implements IDataProvider
             this.registerDropSelfLootTable(BlockInit.ZINC_BLOCK.get());
             this.registerDropSelfLootTable(BlockInit.ZINC_ORE.get());
             
+            this.registerDropSelfLootTable(BlockInit.BRASS_BLOCK.get());
+            this.registerDropSelfLootTable(BlockInit.CHROMIUM_ORE.get());
+            this.registerDropSelfLootTable(BlockInit.CHROMIUM_BLOCK.get());
+            this.registerDropSelfLootTable(BlockInit.THORIUM_ORE.get());
+            
             this.registerDropSelfLootTable(BlockInit.RUBBER_LOG.get());
             this.registerDropSelfLootTable(BlockInit.RUBBER_WOOD.get());
             this.registerDropSelfLootTable(BlockInit.RUBBER_STRIPPED_LOG.get());

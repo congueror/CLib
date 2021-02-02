@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:copper_ingot"
+    },
+    {
+      "tag": "clib:hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:copper_dust"
+  }
+}

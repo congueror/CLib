@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:thorium_ingot"
+    }
+  ],
+  "result": {
+    "item": "clib:thorium_nugget",
+    "count": 9
+  }
+}

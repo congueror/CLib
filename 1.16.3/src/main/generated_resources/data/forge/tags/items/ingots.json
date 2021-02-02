@@ -19,6 +19,9 @@
     "#forge:ingots/tungsten",
     "#forge:ingots/uranium",
     "#forge:ingots/cobalt",
-    "#forge:ingots/zinc"
+    "#forge:ingots/zinc",
+    "#forge:ingots/brass",
+    "#forge:ingots/chromium",
+    "#forge:ingots/thorium"
   ]
 }

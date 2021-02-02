@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:lumium_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "lumium_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:lumium_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:lumium_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lumium_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

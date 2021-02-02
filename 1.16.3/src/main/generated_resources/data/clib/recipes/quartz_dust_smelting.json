@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:quartz_dust"
+  },
+  "result": "minecraft:quartz",
+  "experience": 0.7,
+  "cookingtime": 200
+}

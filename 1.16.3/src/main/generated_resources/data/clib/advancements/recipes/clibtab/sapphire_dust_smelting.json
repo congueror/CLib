@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:sapphire_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "sapphire_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:sapphire_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:sapphire_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sapphire_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -20,6 +20,9 @@
     "#forge:nuggets/coal",
     "#forge:nuggets/uranium",
     "#forge:nuggets/cobalt",
-    "#forge:nuggets/zinc"
+    "#forge:nuggets/zinc",
+    "#forge:nuggets/brass",
+    "#forge:nuggets/chromium",
+    "#forge:nuggets/thorium"
   ]
 }

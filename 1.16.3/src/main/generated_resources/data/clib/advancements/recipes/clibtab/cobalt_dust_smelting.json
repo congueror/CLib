@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:cobalt_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "cobalt_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:cobalt_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:cobalt_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cobalt_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

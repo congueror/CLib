@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:coal_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "coal_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:coal_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:coal_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "coal_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

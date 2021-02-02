@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:signalum_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "signalum_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:signalum_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:signalum_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "signalum_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

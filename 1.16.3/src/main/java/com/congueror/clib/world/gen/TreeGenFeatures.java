@@ -31,7 +31,7 @@ public class TreeGenFeatures {
 
 	public static final ConfiguredFeature<?, ?> PLACABLE_RUBBER_TREE = createConfiguredFeature("rubber_tree",
 			TreeGenFeatures.RUBBER_TREE.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-					.withPlacement(Placement.field_242902_f.configure(new AtSurfaceWithExtraConfig(0, 0.01F, 1))));
+					.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.01F, 1))));
 	
 	@SubscribeEvent
 	public static void addTrees(BiomeLoadingEvent event)

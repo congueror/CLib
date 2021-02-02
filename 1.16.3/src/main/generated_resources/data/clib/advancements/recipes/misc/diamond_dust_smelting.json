@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:diamond_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "diamond_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:diamond_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:diamond_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamond_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

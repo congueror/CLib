@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "clib:iron_hammer",
+    "clib:diamond_hammer",
+    "clib:netherite_hammer"
+  ]
+}

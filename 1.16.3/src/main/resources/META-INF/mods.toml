@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/congueror/CLib/issues" #optional
 
 modId="clib" #mandatory
 
-version="1.4.0" #mandatory
+version="1.5.1" #mandatory
 
 displayName="Conguerors Library" #mandatory
 
@@ -49,6 +49,6 @@ Adds a bunch o' ores
 [[dependencies.clib]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3]"
+    versionRange="[1.16.3,)"
     ordering="NONE"
     side="BOTH"

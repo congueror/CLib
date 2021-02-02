@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:silver_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "silver_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:silver_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:silver_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "silver_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:lumium_dust"
+  },
+  "result": "clib:lumium_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:chromium_ingot_blasting"
+    ]
+  },
+  "criteria": {
+    "chromium_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:chromium_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:chromium_ingot_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chromium_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

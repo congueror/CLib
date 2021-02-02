@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:iron_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "iron_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:iron_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:iron_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "iron_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

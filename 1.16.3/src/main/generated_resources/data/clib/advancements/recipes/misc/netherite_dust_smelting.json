@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:netherite_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "netherite_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:netherite_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:netherite_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

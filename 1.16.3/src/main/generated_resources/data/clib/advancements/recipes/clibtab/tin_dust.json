@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:tin_dust"
+    ]
+  },
+  "criteria": {
+    "tin_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:tin_ingot"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:tin_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tin_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

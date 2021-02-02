@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "tag": "clib:hammers/tier_2_hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:diamond_dust"
+  }
+}

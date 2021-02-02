@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:uranium_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "uranium_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:uranium_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:uranium_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "uranium_dust",
+      "has_the_recipe"
+    ]
+  ]
+}
