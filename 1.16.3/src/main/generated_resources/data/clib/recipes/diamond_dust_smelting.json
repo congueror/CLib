@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:diamond_dust"
+  },
+  "result": "minecraft:diamond",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:electrum_ingot"
+    },
+    {
+      "tag": "clib:hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:electrum_dust"
+  }
+}

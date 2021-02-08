@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "clib:brass_blend"
+  },
+  "result": "clib:brass_ingot",
+  "experience": 1.7,
+  "cookingtime": 400
+}

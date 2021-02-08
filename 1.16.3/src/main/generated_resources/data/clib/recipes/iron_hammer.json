@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " a ",
+    " sa",
+    "s  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/iron"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "clib:iron_hammer"
+  }
+}

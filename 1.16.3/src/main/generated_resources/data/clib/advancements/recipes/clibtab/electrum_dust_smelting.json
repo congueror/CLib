@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:electrum_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "electrum_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:electrum_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:electrum_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "electrum_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

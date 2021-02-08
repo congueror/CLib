@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:brass_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "brass_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:brass_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:brass_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brass_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

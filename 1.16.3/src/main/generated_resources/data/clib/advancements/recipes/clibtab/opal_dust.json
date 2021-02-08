@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:opal_dust"
+    ]
+  },
+  "criteria": {
+    "opal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:opal"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:opal_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "opal",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:brass_block"
+    }
+  ],
+  "result": {
+    "item": "clib:brass_ingot",
+    "count": 9
+  }
+}

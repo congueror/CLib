@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:brass_ingot_blasting"
+    ]
+  },
+  "criteria": {
+    "brass_blend": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:brass_blend"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:brass_ingot_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brass_blend",
+      "has_the_recipe"
+    ]
+  ]
+}

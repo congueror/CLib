@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:aluminum_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "aluminum_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:aluminum_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:aluminum_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "aluminum_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

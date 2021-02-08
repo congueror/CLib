@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:netherite_hammer_smithing"
+    ]
+  },
+  "criteria": {
+    "netherite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/netherite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:netherite_hammer_smithing"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

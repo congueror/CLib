@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:platinum_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "platinum_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:platinum_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:platinum_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "platinum_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

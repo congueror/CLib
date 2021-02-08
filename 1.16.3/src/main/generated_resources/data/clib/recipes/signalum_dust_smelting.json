@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:signalum_dust"
+  },
+  "result": "clib:signalum_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

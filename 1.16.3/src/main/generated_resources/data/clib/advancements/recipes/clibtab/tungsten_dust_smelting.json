@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:tungsten_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "tungsten_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:tungsten_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:tungsten_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tungsten_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:lapis_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "lapis_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:lapis_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:lapis_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lapis_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

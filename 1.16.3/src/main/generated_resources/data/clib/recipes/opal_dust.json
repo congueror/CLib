@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:opal"
+    },
+    {
+      "tag": "clib:hammers/tier_2_hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:opal_dust"
+  }
+}

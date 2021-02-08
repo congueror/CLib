@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:enderium_ingot"
+    },
+    {
+      "item": "clib:netherite_hammer"
+    }
+  ],
+  "result": {
+    "item": "clib:enderium_dust"
+  }
+}

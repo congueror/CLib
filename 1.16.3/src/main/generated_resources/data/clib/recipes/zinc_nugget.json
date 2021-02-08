@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "clib:amethyst"
+      "item": "clib:zinc_ingot"
     }
   ],
   "result": {

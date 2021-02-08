@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:quartz_dust"
+    ]
+  },
+  "criteria": {
+    "quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:quartz"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:quartz_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "quartz",
+      "has_the_recipe"
+    ]
+  ]
+}

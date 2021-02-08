@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:chromium_ore"
+  },
+  "result": "clib:chromium_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

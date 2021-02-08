@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:thorium_ingot"
+    },
+    {
+      "tag": "clib:hammers/tier_2_hammers"
+    }
+  ],
+  "result": {
+    "item": "clib:thorium_dust"
+  }
+}

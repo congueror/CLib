@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clib:chromium_block"
+    }
+  ],
+  "result": {
+    "item": "clib:chromium_ingot",
+    "count": 9
+  }
+}

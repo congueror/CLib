@@ -129,6 +129,17 @@ public class BlockInit
     public static final RegistryObject<Block> SALTPETRE_ORE = BLOCKS.register("saltpetre_ore", () -> new ModOreBlock
     		(Block.Properties.create(Material.IRON).hardnessAndResistance(3f, 3f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(0).setRequiresTool()));
     
+    public static final RegistryObject<Block> BRASS_BLOCK = BLOCKS.register("brass_block", () -> new MetalBlock
+    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
+    
+    public static final RegistryObject<Block> CHROMIUM_ORE = BLOCKS.register("chromium_ore", () -> new ModOreBlock
+    		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
+    public static final RegistryObject<Block> CHROMIUM_BLOCK = BLOCKS.register("chromium_block", () -> new MetalBlock
+    		(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 6f).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()));
+    
+    public static final RegistryObject<Block> THORIUM_ORE = BLOCKS.register("thorium_ore", () -> new ModOreBlock
+    		(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 3.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()));
+    
     public static final RegistryObject<Block> RUBBER_LOG = BLOCKS.register("rubber_log", () -> new RotatedPillarBlock
     		(Block.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> RUBBER_WOOD = BLOCKS.register("rubber_wood", () -> new RotatedPillarBlock

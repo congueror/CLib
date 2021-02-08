@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:thorium_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "thorium_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:thorium_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:thorium_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thorium_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

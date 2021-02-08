@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:steel_dust_smelting"
+    ]
+  },
+  "criteria": {
+    "steel_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:steel_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:steel_dust_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "steel_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

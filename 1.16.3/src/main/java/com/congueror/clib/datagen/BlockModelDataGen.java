@@ -166,5 +166,19 @@ public class BlockModelDataGen extends BlockStateProvider
 		basicBlockItem(BlockInit.RUBBER_PLANKS.get());
 		basicBlockItem(BlockInit.RUBBER_LEAVES.get());
 		basicBlockItem(BlockInit.RUBBER_SAPLING.get());
+		
+		//Brass
+		simpleBlock(BlockInit.BRASS_BLOCK.get());
+		basicBlockItem(BlockInit.BRASS_BLOCK.get());
+				
+		//Chromium
+		simpleBlock(BlockInit.CHROMIUM_BLOCK.get());
+		basicBlockItem(BlockInit.CHROMIUM_BLOCK.get());
+		simpleBlock(BlockInit.CHROMIUM_ORE.get());
+		basicBlockItem(BlockInit.CHROMIUM_ORE.get());
+				
+		//Thorium
+		simpleBlock(BlockInit.THORIUM_ORE.get());
+		basicBlockItem(BlockInit.THORIUM_ORE.get());
 	}
 }

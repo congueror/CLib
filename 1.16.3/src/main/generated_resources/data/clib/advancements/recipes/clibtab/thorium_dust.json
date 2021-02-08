@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "clib:thorium_dust"
+    ]
+  },
+  "criteria": {
+    "thorium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "clib:thorium_ingot"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "clib:thorium_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thorium_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

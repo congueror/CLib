@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "clib:thorium_dust"
+  },
+  "result": "clib:thorium_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}
